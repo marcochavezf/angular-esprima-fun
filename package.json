@@ -1,0 +1,14 @@
+{
+  "name": "angular-esprima-fun",
+  "version": "1.0.0",
+  "description": "prototype",
+  "main": "angular.parser.js",
+  "author": "Marco Chávez",
+  "license": "ISC",
+  "dependencies": {
+    "esprima": "^3.0.0",
+    "estraverse": "^4.2.0",
+    "lodash": "^4.15.0",
+    "walk": "^2.3.9"
+  }
+}
