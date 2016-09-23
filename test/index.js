@@ -1,19 +1,68 @@
 'use strict';
 
-var assert = require('assert');
+var chai = require('chai');
+var should = chai.should();
+
 var angularEsprimaFun = require('../lib');
+var helperTest = require('./helpers');
+var enableVerbose = false;
 
 describe('Controllers', function () {
-  it('should parse controllers from local test files', function (done) {
+  it('should parse controllers from file.examples (local files)', function (done) {
+
+    var dirTest = 'test/file.examples';
+    angularEsprimaFun.createControllerSemantics(dirTest, (controllerSemantics)=>{
+      var controllersFiles = controllerSemantics.controllerFiles;
+      var controllersFilesTestData = [
+        [
+          //example1.js
+          {
+            name: 'SpicyController',
+            scopeProperties: ['arr', 'isAdmin', 'model', 'spice', 'valFn'],
+            scopeFunctions: ['chiliSpicy', 'fnA', 'jalapenoSpicy'],
+            thisProperties: [],
+            thisFunctions: []
+          },
+          {
+            name: 'AnotherController',
+            scopeProperties: ['spice'],
+            scopeFunctions: ['chiliSpicy', 'jalapenoSpicy'],
+            thisProperties: ['asdf'],
+            thisFunctions: ['fnA', 'fnB']
+          },
+          {
+            name: 'AnotherAnotherCtlr',
+            scopeProperties: ['spice'],
+            scopeFunctions: ['chiliSpicy', 'jalapenoSpicy'],
+            thisProperties: [],
+            thisFunctions: []
+          }
+        ],
+
+        //example2.js
+        [
+          {
+            name: 'LoginController',
+            scopeProperties: ['invalid', 'isLoading', 'model'],
+            scopeFunctions: ['forgotPassword', 'login'],
+            thisProperties: [],
+            thisFunctions: []
+          }
+        ]
+      ];
+
+      helperTest.testControllerFiles(controllersFiles, controllersFilesTestData, done);
+    }, enableVerbose);
+  });
+
+  it.skip('should parse controllers from local test files', function (done) {
 
     // Walker options
-    var dirTestA = '../../clientside/arvak/www/js';
-    var dirTestB = 'test/file.examples';
-
-    angularEsprimaFun.createControllerSemantics(dirTestB, (controllerFiles)=>{
+    var dirTest = '../../clientside/arvak/www/js';
+    angularEsprimaFun.createControllerSemantics(dirTest, (controllerFiles)=>{
       console.log('controllerFiles', controllerFiles);
       done();
       //assert(true, 'we expected this package author to add actual unit tests.');
-    });
+    }, false);
   });
 });
