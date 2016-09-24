@@ -8,9 +8,30 @@ var helperTest = require('./helpers');
 var enableVerbose = false;
 
 describe('Controllers', function () {
-  it('should parse controllers from file.examples (local files)', function (done) {
+  it('should parse controllers from file.examples/testA (local files)', function (done) {
+    var dirTest = 'test/file.examples/testA';
+    angularEsprimaFun.createControllerSemantics(dirTest, (controllerSemantics)=>{
+      var controllersFiles = controllerSemantics.controllerFiles;
+      var controllersFilesTestData = [
+        [
+          //example1.js
+          {
+            name: 'SpicyController',
+            scopeProperties: ['arr', 'isAdmin', 'model', 'spice', 'valFn'],
+            scopeFunctions: ['chiliSpicy', 'fnA', 'jalapenoSpicy'],
+            thisProperties: [],
+            thisFunctions: []
+          }
+        ]
+      ];
+      //console.log(JSON.stringify(controllersFiles[0].controllerSemantic.controllers));
+      helperTest.testControllerFiles(controllersFiles, controllersFilesTestData, done);
+    }, enableVerbose);
+  });
 
-    var dirTest = 'test/file.examples';
+  it('should parse controllers from file.examples/testB (local files)', function (done) {
+
+    var dirTest = 'test/file.examples/testB';
     angularEsprimaFun.createControllerSemantics(dirTest, (controllerSemantics)=>{
       var controllersFiles = controllerSemantics.controllerFiles;
       var controllersFilesTestData = [
@@ -50,7 +71,6 @@ describe('Controllers', function () {
           }
         ]
       ];
-
       helperTest.testControllerFiles(controllersFiles, controllersFilesTestData, done);
     }, enableVerbose);
   });
