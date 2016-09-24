@@ -24,25 +24,29 @@ function testControllerFiles(controllersFiles, controllersFilesTestData, done){
       //scopeProperties
       controller.scopeProperties.should.have.length(controllerData.scopeProperties.length);
       controller.scopeProperties.forEach((scopeProperty, index)=>{
-        scopeProperty.name.should.equal(controllerData.scopeProperties[index]);
+        scopeProperty.name.should.equal(controllerData.scopeProperties[index].name);
+        scopeProperty.node.loc.start.line.should.equal(controllerData.scopeProperties[index].line);
       });
 
       //scopeFunctions
       controller.scopeFunctions.should.have.length(controllerData.scopeFunctions.length);
       controller.scopeFunctions.forEach((scopeFunction, index)=>{
-        scopeFunction.name.should.equal(controllerData.scopeFunctions[index]);
+        scopeFunction.name.should.equal(controllerData.scopeFunctions[index].name);
+        scopeFunction.node.loc.start.line.should.equal(controllerData.scopeFunctions[index].line);
       });
 
       //thisProperties
       controller.thisProperties.should.have.length(controllerData.thisProperties.length);
       controller.thisProperties.forEach((thisProperty, index)=>{
-        thisProperty.name.should.equal(controllerData.thisProperties[index]);
+        thisProperty.name.should.equal(controllerData.thisProperties[index].name);
+        thisProperty.node.loc.start.line.should.equal(controllerData.thisProperties[index].line);
       });
 
       //thisFunctions
       controller.thisFunctions.should.have.length(controllerData.thisFunctions.length);
       controller.thisFunctions.forEach((thisFunction, index)=>{
-        thisFunction.name.should.equal(controllerData.thisFunctions[index]);
+        thisFunction.name.should.equal(controllerData.thisFunctions[index].name);
+        thisFunction.node.loc.start.line.should.equal(controllerData.thisFunctions[index].line);
       });
     });
   });

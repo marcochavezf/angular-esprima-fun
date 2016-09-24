@@ -1,6 +1,4 @@
-/**
- * Created by marcochavezf on 9/12/16.
- */
+//WARNING: Don't modify this file, otherwise update unit tests or create another file.
 /**
  * LoginController
  */

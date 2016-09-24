@@ -1,3 +1,5 @@
+//WARNING: Don't modify this file, otherwise update unit tests or create another file.
+
 var varA;
 var varB = 1;
 var myApp = angular.module('spicyApp1', []);
