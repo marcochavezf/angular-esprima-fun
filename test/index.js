@@ -5,7 +5,7 @@ var should = chai.should();
 
 var angularEsprimaFun = require('../lib');
 var helperTest = require('./helpers');
-var enableVerbose = false;
+var enableVerbose = true;
 
 describe('Controllers', function () {
   it('should parse controllers from file.examples/testA (local files)', function (done) {
@@ -24,7 +24,6 @@ describe('Controllers', function () {
           }
         ]
       ];
-      //console.log(JSON.stringify(controllersFiles[0].controllerSemantic.controllers));
       helperTest.testControllerFiles(controllersFiles, controllersFilesTestData, done);
     }, enableVerbose);
   });
@@ -82,7 +81,6 @@ describe('Controllers', function () {
     angularEsprimaFun.createControllerSemantics(dirTest, (controllerFiles)=>{
       console.log('controllerFiles', controllerFiles);
       done();
-      //assert(true, 'we expected this package author to add actual unit tests.');
     }, false);
   });
 });
