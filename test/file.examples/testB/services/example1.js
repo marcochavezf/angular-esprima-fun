@@ -93,11 +93,11 @@ updateModule.factory('AppJsonUpdateFactory', AppJsonUpdateFactory);
     }
 
     function update() {
-      
+
       $ionicLoading.show({
         template: loadingTemplate("Loading Available Applications.")
       });
-      
+
       return $http.get(paths.host() + paths.app.definitions())
       .then(function(resp){
         return AppDefService.persistAppDefs(resp.data.response);
@@ -105,16 +105,16 @@ updateModule.factory('AppJsonUpdateFactory', AppJsonUpdateFactory);
       .then(function(appDefs) {
         $rootScope.$broadcast('updatedAppDefinitions', appDefs);
         $ionicLoading.hide();
-        
+
         return appDefs;
-      
+
       }).catch(function(err) {
         $ionicLoading.hide();
         return [];
         $log.debug("Update Error: " + JSON.stringify(err));
       });
 
-      
+
     }
 
     function loadingTemplate(text) {
@@ -145,7 +145,7 @@ updateModule.factory('BinaryUpdateFactory', BinaryUpdateFactory);
       else { // local testing outside device
         return $q(function(resolve, reject) {
           resolve('0.0.5');
-        }); 
+        });
       }
     }
 
@@ -284,7 +284,7 @@ updateModule.factory('WebUpdateFactory', WebUpdateFactory);
       else { // if not on device
         return $q(function(resolve, reject) {
           resolve(false); // no need to update web
-        }); 
+        });
       }
     }
 
@@ -303,7 +303,7 @@ updateModule.factory('WebUpdateFactory', WebUpdateFactory);
           $ionicPopup.alert({
             title: 'Update Failed',
             template: 'Unable to extract update. Please try to update again later.',
-            okText: 'Okay' 
+            okText: 'Okay'
           });
         }, function(progress) {
           // Do something with the zip extraction progress
@@ -318,7 +318,7 @@ updateModule.factory('WebUpdateFactory', WebUpdateFactory);
         $ionicPopup.alert({
           title: 'Update Failed',
           template: 'Unable to download update. Please try to update again later.',
-          okText: 'Okay' 
+          okText: 'Okay'
         });
       }, function(progress) {
         // Do something with the download progress

@@ -38,7 +38,7 @@ describe('Controllers', function () {
 
   it('should parse controllers from file.examples/testB (local files)', function (done) {
 
-    var dirTest = 'test/file.examples/testB';
+    var dirTest = 'test/file.examples/testB/controllers';
     angularEsprimaFun.createControllerSemantics(dirTest, (controllerSemantics)=>{
       var controllersFiles = controllerSemantics.controllerFiles;
       var controllersFilesTestData = [
