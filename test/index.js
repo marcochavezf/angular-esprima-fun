@@ -7,7 +7,18 @@ var angularEsprimaFun = require('../lib');
 var helperTest = require('./helpers');
 var enableVerbose = false;
 
-describe('Controllers', function () {
+describe('Test JS Profile', function () {
+  var cpuProfilePath = 'test/prototype/CPU-20161215T223525.cpuprofile';
+  it('testing with profile file', function(done){
+    this.timeout(100000);
+    angularEsprimaFun.testPrototype(cpuProfilePath, function(projectNodes, error){
+      done(error);
+    })
+  });
+});
+
+
+describe.skip('Controllers', function () {
   it('should parse controllers from file.examples/testA (local files)', function (done) {
     var dirTest = 'test/file.examples/testA';
     angularEsprimaFun.createControllerSemantics(dirTest, (controllerSemantics)=>{
