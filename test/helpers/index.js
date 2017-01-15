@@ -8,46 +8,39 @@ module.exports = {
 
 /////////////
 
-function testControllerFiles(controllersFiles, controllersFilesTestData, done){
-  controllersFiles.should.have.length(controllersFilesTestData.length);
-  controllersFiles.forEach((controllerFile, index)=>{
+function testControllerFiles(controllersSemantics, controllersSemanticsTestData, done){
+  controllersSemantics.should.have.length(controllersSemanticsTestData.length);
+  controllersSemantics.forEach((controller, index)=>{
 
-    var controllers = controllerFile.controllerSemantic.controllers;
-    var controllersData = controllersFilesTestData[index];
+    var controllerTestData = controllersSemanticsTestData[index];
+    controller.name.should.equal(controllerTestData.name);
 
-    controllers.should.have.length(controllersData.length);
-    controllers.forEach((controller, index)=>{
+    //scopeProperties
+    controller.scopeProperties.should.have.length(controllerTestData.scopeProperties.length);
+    controller.scopeProperties.forEach((scopeProperty, index)=>{
+      scopeProperty.name.should.equal(controllerTestData.scopeProperties[index].name);
+      scopeProperty.node.loc.start.line.should.equal(controllerTestData.scopeProperties[index].line);
+    });
 
-      var controllerData = controllersData[index];
-      controller.name.should.equal(controllerData.name);
+    //scopeFunctions
+    controller.scopeFunctions.should.have.length(controllerTestData.scopeFunctions.length);
+    controller.scopeFunctions.forEach((scopeFunction, index)=>{
+      scopeFunction.name.should.equal(controllerTestData.scopeFunctions[index].name);
+      scopeFunction.node.loc.start.line.should.equal(controllerTestData.scopeFunctions[index].line);
+    });
 
-      //scopeProperties
-      controller.scopeProperties.should.have.length(controllerData.scopeProperties.length);
-      controller.scopeProperties.forEach((scopeProperty, index)=>{
-        scopeProperty.name.should.equal(controllerData.scopeProperties[index].name);
-        scopeProperty.node.loc.start.line.should.equal(controllerData.scopeProperties[index].line);
-      });
+    //thisProperties
+    controller.thisProperties.should.have.length(controllerTestData.thisProperties.length);
+    controller.thisProperties.forEach((thisProperty, index)=>{
+      thisProperty.name.should.equal(controllerTestData.thisProperties[index].name);
+      thisProperty.node.loc.start.line.should.equal(controllerTestData.thisProperties[index].line);
+    });
 
-      //scopeFunctions
-      controller.scopeFunctions.should.have.length(controllerData.scopeFunctions.length);
-      controller.scopeFunctions.forEach((scopeFunction, index)=>{
-        scopeFunction.name.should.equal(controllerData.scopeFunctions[index].name);
-        scopeFunction.node.loc.start.line.should.equal(controllerData.scopeFunctions[index].line);
-      });
-
-      //thisProperties
-      controller.thisProperties.should.have.length(controllerData.thisProperties.length);
-      controller.thisProperties.forEach((thisProperty, index)=>{
-        thisProperty.name.should.equal(controllerData.thisProperties[index].name);
-        thisProperty.node.loc.start.line.should.equal(controllerData.thisProperties[index].line);
-      });
-
-      //thisFunctions
-      controller.thisFunctions.should.have.length(controllerData.thisFunctions.length);
-      controller.thisFunctions.forEach((thisFunction, index)=>{
-        thisFunction.name.should.equal(controllerData.thisFunctions[index].name);
-        thisFunction.node.loc.start.line.should.equal(controllerData.thisFunctions[index].line);
-      });
+    //thisFunctions
+    controller.thisFunctions.should.have.length(controllerTestData.thisFunctions.length);
+    controller.thisFunctions.forEach((thisFunction, index)=>{
+      thisFunction.name.should.equal(controllerTestData.thisFunctions[index].name);
+      thisFunction.node.loc.start.line.should.equal(controllerTestData.thisFunctions[index].line);
     });
   });
   done();
