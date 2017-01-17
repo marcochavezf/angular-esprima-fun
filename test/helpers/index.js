@@ -3,7 +3,8 @@
  */
 
 module.exports = {
-  testControllerFiles: testControllerFiles
+  testControllerFiles: testControllerFiles,
+  testGlobalFunctions: testGlobalFunctions
 };
 
 /////////////
@@ -42,6 +43,14 @@ function testControllerFiles(controllersSemantics, controllersSemanticsTestData,
       thisFunction.name.should.equal(controllerTestData.thisFunctions[index].name);
       thisFunction.node.loc.start.line.should.equal(controllerTestData.thisFunctions[index].line);
     });
+  });
+  done();
+}
+
+function testGlobalFunctions(globalFunctionsSemantics, globalFunctionsSemanticsTestData, done){
+  globalFunctionsSemantics.should.have.length(globalFunctionsSemanticsTestData.length);
+  globalFunctionsSemantics.forEach((globalFunction, index)=>{
+    globalFunction.id.name.should.equal(globalFunctionsSemanticsTestData[index].name);
   });
   done();
 }

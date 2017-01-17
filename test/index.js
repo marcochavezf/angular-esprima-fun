@@ -9,6 +9,9 @@ var enableVerbose = false;
 
 describe('Controllers', function () {
   it('should parse controllers from file.examples/testA (local files)', function (done) {
+    if (enableVerbose){
+      this.timeout(5000);
+    }
     var dirTest = 'test/file.examples/testA';
     angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{
       var controllersSemantics = projectSemantics.controllersSemantics;
@@ -35,7 +38,9 @@ describe('Controllers', function () {
   });
 
   it('should parse controllers from file.examples/testB (local files)', function (done) {
-
+    if (enableVerbose){
+      this.timeout(5000);
+    }
     var dirTest = 'test/file.examples/testB/controllers';
     angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{
       var controllersSemantics = projectSemantics.controllersSemantics;
@@ -96,11 +101,35 @@ describe('Controllers', function () {
   });
 
   it.skip('should parse controllers from local test files', function (done) {
+    if (enableVerbose){
+      this.timeout(5000);
+    }
     // Walker options
     var dirTest = '../../clientside/arvak/www/js';
     angularEsprimaFun.createProjectSemantics(dirTest, (controllerFiles)=>{
       console.log('fileSemantics', controllerFiles);
       done();
-    }, false);
+    }, enableVerbose);
+  });
+});
+
+describe('Global Functions', function(){
+  it('should parse controllers from file.examples/testA (local files)', function (done) {
+    if (enableVerbose) {
+      this.timeout(5000);
+    }
+    var dirTest = 'test/file.examples/testB';
+    angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{
+      var globalFunctionsSemantics = projectSemantics.globalFunctionsSemantics;
+      var globalFunctionsSemanticsTestData = [
+        { name: 'UpdateFactory' },
+        { name: 'AppJsonUpdateFactory' },
+        { name: 'BinaryUpdateFactory' },
+        { name: 'WebUpdateFactory' },
+        { name: 'AudioFactory' },
+        { name: 'AnotherAnotherCtlr' }
+      ];
+      helperTest.testGlobalFunctions(globalFunctionsSemantics, globalFunctionsSemanticsTestData, done);
+    }, enableVerbose);
   });
 });
