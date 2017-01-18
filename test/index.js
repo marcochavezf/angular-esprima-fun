@@ -127,6 +127,7 @@ describe('Global Functions', function(){
         { name: 'BinaryUpdateFactory' },
         { name: 'WebUpdateFactory' },
         { name: 'AudioFactory' },
+        { name: 'TaskActions' },
         { name: 'AnotherAnotherCtlr' }
       ];
       helperTest.testGlobalFunctions(globalFunctionsSemantics, globalFunctionsSemanticsTestData, done);
