@@ -1,3 +1,6 @@
+/**
+ * Created by marcochavezf on 1/22/17.
+ */
 'use strict';
 
 var chai = require('chai');
@@ -97,40 +100,6 @@ describe('Controllers', function () {
         }
       ];
       helperTest.testControllerFiles(controllersSemantics, controllersSemanticsTestData, done);
-    }, enableVerbose);
-  });
-
-  it.skip('should parse controllers from local test files', function (done) {
-    if (enableVerbose){
-      this.timeout(5000);
-    }
-    // Walker options
-    var dirTest = '../../clientside/arvak/www/js';
-    angularEsprimaFun.createProjectSemantics(dirTest, (controllerFiles)=>{
-      console.log('fileSemantics', controllerFiles);
-      done();
-    }, enableVerbose);
-  });
-});
-
-describe('Global Functions', function(){
-  it('should parse controllers from file.examples/testA (local files)', function (done) {
-    if (enableVerbose) {
-      this.timeout(5000);
-    }
-    var dirTest = 'test/file.examples/testB';
-    angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{
-      var globalFunctionsSemantics = projectSemantics.globalFunctionsSemantics;
-      var globalFunctionsSemanticsTestData = [
-        { name: 'UpdateFactory' },
-        { name: 'AppJsonUpdateFactory' },
-        { name: 'BinaryUpdateFactory' },
-        { name: 'WebUpdateFactory' },
-        { name: 'AudioFactory' },
-        { name: 'TaskActions' },
-        { name: 'AnotherAnotherCtlr' }
-      ];
-      helperTest.testGlobalFunctions(globalFunctionsSemantics, globalFunctionsSemanticsTestData, done);
     }, enableVerbose);
   });
 });
