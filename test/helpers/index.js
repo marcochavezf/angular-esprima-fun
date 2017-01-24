@@ -4,7 +4,8 @@
 
 module.exports = {
   testControllerFiles: testControllerFiles,
-  testGlobalFunctions: testGlobalFunctions
+  testGlobalFunctions: testGlobalFunctions,
+  testServiceFiles: testServiceFiles
 };
 
 /////////////
@@ -51,6 +52,23 @@ function testGlobalFunctions(globalFunctionsSemantics, globalFunctionsSemanticsT
   globalFunctionsSemantics.should.have.length(globalFunctionsSemanticsTestData.length);
   globalFunctionsSemantics.forEach((globalFunction, index)=>{
     globalFunction.id.name.should.equal(globalFunctionsSemanticsTestData[index].name);
+  });
+  done();
+}
+
+function testServiceFiles(servicesSemantics, servicesSemanticsTestData, done){
+  servicesSemantics.should.have.length(servicesSemanticsTestData.length);
+  servicesSemantics.forEach((service, index)=>{
+
+    var serviceTestData = servicesSemanticsTestData[index];
+    service.name.should.equal(serviceTestData.name);
+
+    //service properties
+    service.properties.should.have.length(serviceTestData.properties.length);
+    service.properties.forEach((scopeProperty, index)=>{
+      scopeProperty.name.should.equal(serviceTestData.properties[index].name);
+      //TODO: Check name in service.node
+    });
   });
   done();
 }

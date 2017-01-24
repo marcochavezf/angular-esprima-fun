@@ -15,46 +15,41 @@ describe.skip('Services', function(){
     }
 
     var dirTest = 'test/file.examples/testA';
-    //TODO: modify service test
-    /*
     angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{
       var servicesSemantics = projectSemantics.servicesSemantics;
       var servicesSemanticsTestData = [
         //example1.js
         {
           name: 'serviceA',
-          //body: {}, //we get type of object here
+          //returnBody: {}, //we get type of object here
           properties: [
-            { name: 'shinyNewServiceInstance', type: 'variable' }
-          ],
+            { name: 'shinyNewServiceInstance' }
+          ]
         },
         {
           name: 'serviceB',
-          //body: {}, //we get type of object here
+          //returnBody: {},
           properties: [
             { name: 'sdfg' },
             { name: 'asdf' },
             { name: 'abc' },
-            { name: 'bcd.efg' },
-            { name: 'bcd.fn()' },
+            { name: 'bcd' },
+            { name: 'xyz' },
             { name: 'chilli' },
             { name: 'anotherChilli' },
             { name: 'jalapeno' }
-          ],
-          publicVariables: []
+          ]
         },
         //example2.js
         {
-          name: 'serviceA',
-          //body: {}, //we get type of object here
+          name: 'nameService',
+          //returnBody: {}, //we get type of object here
           properties: [
-            { name: 'shinyNewServiceInstance' }
-          ],
-          publicVariables: []
+            { name: 'getData' }
+          ]
         }
       ];
-      helperTest.testControllerFiles(controllersSemantics, controllersSemanticsTestData, done);
+      helperTest.testControllerFiles(servicesSemantics, servicesSemanticsTestData, done);
     }, enableVerbose);
-    */
   });
 });
