@@ -8,7 +8,7 @@ var angularEsprimaFun = require('../lib');
 var helperTest = require('./helpers');
 var enableVerbose = false;
 
-describe.skip('Services', function(){
+describe('Services', function(){
   it('should parse services from file.examples/testA (local files)', function (done) {
     if (enableVerbose) {
       this.timeout(5000);
@@ -21,35 +21,42 @@ describe.skip('Services', function(){
         //example1.js
         {
           name: 'serviceA',
-          //returnBody: {}, //we get type of object here
-          properties: [
-            { name: 'shinyNewServiceInstance' }
-          ]
+          returnStatement: {
+            argument: {
+              id: { name: 'shinyNewServiceInstance' }
+            }
+          }
         },
         {
           name: 'serviceB',
-          //returnBody: {},
-          properties: [
-            { name: 'sdfg' },
-            { name: 'asdf' },
-            { name: 'abc' },
-            { name: 'bcd' },
-            { name: 'xyz' },
-            { name: 'chilli' },
-            { name: 'anotherChilli' },
-            { name: 'jalapeno' }
-          ]
+          returnStatement: {
+            argument: {
+              properties: [
+                { key: { name: 'sdfg' } },
+                { key: { name: 'asdf' } },
+                { key: { name: 'abc' } },
+                { key: { name: 'bcd' } },
+                { key: { name: 'xyz' } },
+                { key: { name: 'chilli' } },
+                { key: { name: 'anotherChilli' } },
+                { key: { name: 'jalapeno' } }
+              ]
+            }
+          }
         },
         //example2.js
         {
           name: 'nameService',
-          //returnBody: {}, //we get type of object here
-          properties: [
-            { name: 'getData' }
-          ]
+          returnStatement: {
+            argument: {
+              properties: [
+                { key: { name: 'getData' } }
+              ]
+            }
+          }
         }
       ];
-      helperTest.testControllerFiles(servicesSemantics, servicesSemanticsTestData, done);
+      helperTest.testServiceFiles(servicesSemantics, servicesSemanticsTestData, done);
     }, enableVerbose);
   });
 });

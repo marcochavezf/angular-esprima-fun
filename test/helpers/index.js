@@ -63,11 +63,19 @@ function testServiceFiles(servicesSemantics, servicesSemanticsTestData, done){
     var serviceTestData = servicesSemanticsTestData[index];
     service.name.should.equal(serviceTestData.name);
 
+    //Check if service body is not object with properties.
+    var returnId = service.returnStatement.argument.id;
+    if (returnId) {
+      returnId.name.should.equal(serviceTestData.returnStatement.argument.id.name);
+      return;
+    }
+
     //service properties
-    service.properties.should.have.length(serviceTestData.properties.length);
-    service.properties.forEach((scopeProperty, index)=>{
-      scopeProperty.name.should.equal(serviceTestData.properties[index].name);
-      //TODO: Check name in service.node
+    var properties = service.returnStatement.argument.properties;
+    var propertiesTestData = serviceTestData.returnStatement.argument.properties;
+    properties.should.have.length(propertiesTestData.length);
+    properties.forEach((scopeProperty, index)=>{
+      scopeProperty.key.name.should.equal(propertiesTestData[index].key.name);
     });
   });
   done();
