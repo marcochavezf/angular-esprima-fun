@@ -151,53 +151,39 @@ describe('Services', function(){
             }
           }
         },
-        /*
         //example4.js
         {
           name: 'TaskActions',
           returnStatement: {
             argument: {
               properties: [
-                { key: { name: 'getUser' } },
-                { key: { name: 'saveUser' } },
-                { key: { name: 'removeUser' } },
-                { key: { name: 'getModel' } },
-                { key: { name: 'saveModel' } },
-                { key: { name: 'resetModel' } },
-                { key: { name: 'getToken' } },
-                { key: { name: 'saveToken' } },
-                { key: { name: 'removeToken' } }
+                { key: { name: 'buildMenu' } },
+                { key: { name: 'buildNextView' } },
+                { key: { name: 'cancelAutoPolling' } },
+                { key: { name: 'createAddTaskAction' } },
+                { key: { name: 'dataLoading' } },
+                { key: { name: 'flushTasks' } },
+                { key: { name: 'loadStoredReduxState' } },
+                { key: { name: 'loadAndPrepareAllTasks' } },
+                { key: { name: 'getLatestAfterSubmit' } },
+                { key: { name: 'getCurrentState' } },
+                { key: { name: 'getFilteredTasks' } },
+                { key: { name: 'getUserTasks' } },
+                { key: { name: 'pauseAutoPolling' } },
+                { key: { name: 'populateMissingFieldValues' } },
+                { key: { name: 'processUnsentTasks' } },
+                { key: { name: 'removeTask' } },
+                { key: { name: 'removeViews' } },
+                { key: { name: 'setAutoPolling' } },
+                { key: { name: 'subscribeUserTasks' } },
+                { key: { name: 'stop' } },
+                { key: { name: 'transformAllTasks' } },
+                { key: { name: 'unsubscribeUserTasks' } },
+                { key: { name: 'updateTasks' } }
               ]
             }
           }
         }
-
-         var  service = {
-         buildMenu: buildMenu,
-         buildNextView:buildNextView,
-         cancelAutoPolling: cancelAutoPolling,
-         createAddTaskAction: createAddTaskAction,
-         dataLoading: dataLoading,
-         flushTasks: flushTasks,
-         loadStoredReduxState: loadStoredReduxState,
-         loadAndPrepareAllTasks: loadAndPrepareAllTasks,
-         getLatestAfterSubmit: getLatestAfterSubmit,
-         getCurrentState:getCurrentState,
-         getFilteredTasks: getFilteredTasks,
-         getUserTasks: getUserTasks,
-         pauseAutoPolling: pauseAutoPolling,
-         populateMissingFieldValues: populateMissingFieldValues,
-         processUnsentTasks: processUnsentTasks,
-         removeTask: removeTask,
-         removeViews: removeViews,
-         setAutoPolling: setAutoPolling,
-         subscribeUserTasks: subscribeUserTasks,
-         stop: stop,
-         transformAllTasks: transformAllTasks,
-         unsubscribeUserTasks: unsubscribeUserTasks,
-         updateTasks: updateTasks
-         };
-        */
       ];
       helperTest.testServiceFiles(servicesSemantics, servicesSemanticsTestData, done);
     }, enableVerbose);

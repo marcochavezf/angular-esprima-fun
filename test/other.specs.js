@@ -24,6 +24,7 @@ describe('Global Functions', function(){
         { name: 'WebUpdateFactory' },
         { name: 'AudioFactory' },
         { name: 'TaskActions' },
+        { name: 'setMockResponses' },
         { name: 'AnotherAnotherCtlr' }
       ];
       helperTest.testGlobalFunctions(globalFunctionsSemantics, globalFunctionsSemanticsTestData, done);
