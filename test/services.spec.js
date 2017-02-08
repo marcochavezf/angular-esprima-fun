@@ -151,6 +151,18 @@ describe('Services', function(){
             }
           }
         },
+        //miscellaneous/example1.js
+        {
+          name: 'authRequestInterceptor',
+          returnStatement: {
+            argument: {
+              properties: [
+                { key: { name: 'request' } },
+                { key: { name: 'responseError' } }
+              ]
+            }
+          }
+        },
         //example4.js
         {
           name: 'TaskActions',
