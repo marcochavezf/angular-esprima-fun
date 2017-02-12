@@ -9,7 +9,7 @@ var helperTest = require('./helpers');
 var enableVerbose = false;
 
 describe('Services', function(){
-  it('should parse services from file.examples/testA (local files)', function (done) {
+  it('should parse services (Angular Factories) from file.examples/testA (local files)', function (done) {
     if (enableVerbose) {
       this.timeout(5000);
     }
@@ -60,7 +60,7 @@ describe('Services', function(){
     }, enableVerbose);
   });
 
-  it('should parse services from file.examples/testB (local files)', function (done) {
+  it('should parse services (Angular Factories) from file.examples/testB (local files)', function (done) {
     if (enableVerbose) {
       this.timeout(5000);
     }
@@ -151,6 +151,18 @@ describe('Services', function(){
             }
           }
         },
+        //example1.js
+        {
+          name: 'MyService',
+          returnStatement: {
+            argument: {
+              properties: [
+                { key: { name: 'anotherFunction' } },
+                { key: { name: 'sayHello' } }
+              ]
+            }
+          }
+        },
         //miscellaneous/example1.js
         {
           name: 'authRequestInterceptor',
@@ -192,6 +204,32 @@ describe('Services', function(){
                 { key: { name: 'transformAllTasks' } },
                 { key: { name: 'unsubscribeUserTasks' } },
                 { key: { name: 'updateTasks' } }
+              ]
+            }
+          }
+        }
+      ];
+      helperTest.testServiceFiles(servicesSemantics, servicesSemanticsTestData, done);
+    }, enableVerbose);
+  });
+
+  it('should parse services (Angular Service) from file.examples/testB/services/example5.js (local files)', function (done) {
+    if (enableVerbose) {
+      this.timeout(5000);
+    }
+
+    var dirTest = 'test/file.examples/testB/services/example5.js';
+    angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{
+      var servicesSemantics = projectSemantics.servicesSemantics;
+      var servicesSemanticsTestData = [
+        //example5.js
+        {
+          name: 'MyService',
+          returnStatement: {
+            argument: {
+              properties: [
+                { key: { name: 'anotherFunction' } },
+                { key: { name: 'sayHello' } }
               ]
             }
           }
