@@ -4,6 +4,7 @@
 
 module.exports = {
   testControllerFiles: testControllerFiles,
+  testFilters: testFilters,
   testGlobalFunctions: testGlobalFunctions,
   testServiceFiles: testServiceFiles
 };
@@ -77,6 +78,14 @@ function testServiceFiles(servicesSemantics, servicesSemanticsTestData, done){
     properties.forEach((scopeProperty, index)=>{
       scopeProperty.key.name.should.equal(propertiesTestData[index].key.name);
     });
+  });
+  done();
+}
+
+function testFilters(filtersSemantics, filtersSemanticsTestData, done){
+  filtersSemantics.should.have.length(filtersSemanticsTestData.length);
+  filtersSemantics.forEach((filterSemantic, index)=>{
+    filterSemantic.name.should.equal(filtersSemanticsTestData[index].name);
   });
   done();
 }
