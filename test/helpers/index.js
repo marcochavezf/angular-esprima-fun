@@ -84,8 +84,18 @@ function testServiceFiles(servicesSemantics, servicesSemanticsTestData, done){
 
 function testFilters(filtersSemantics, filtersSemanticsTestData, done){
   filtersSemantics.should.have.length(filtersSemanticsTestData.length);
-  filtersSemantics.forEach((filterSemantic, index)=>{
-    filterSemantic.name.should.equal(filtersSemanticsTestData[index].name);
+  filtersSemantics.forEach((filter, index)=>{
+
+    var filterTestData = filtersSemanticsTestData[index];
+    filter.name.should.equal(filterTestData.name);
+
+    //filter return function params
+    var params = filter.returnStatement.argument.params;
+    var paramsTestData = filterTestData.returnStatement.argument.params;
+    params.should.have.length(paramsTestData.length);
+    params.forEach((param, index)=>{
+      param.name.should.equal(paramsTestData[index].name);
+    });
   });
   done();
 }

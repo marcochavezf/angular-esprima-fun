@@ -8,7 +8,7 @@ var angularEsprimaFun = require('../lib');
 var helperTest = require('./helpers');
 var enableVerbose = false;
 
-describe.skip('Filters', function(){
+describe('Filters', function(){
   it('should parse filters from file.examples/testA (local files)', function (done) {
     if (enableVerbose) {
       this.timeout(5000);
@@ -16,18 +16,28 @@ describe.skip('Filters', function(){
 
     var dirTest = 'test/file.examples/testA';
     angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{
-      var servicesSemantics = projectSemantics.filtersSemantics;
-      var servicesSemanticsTestData = [
+      var filtersSemantics = projectSemantics.filtersSemantics;
+      var filtersSemanticsTestData = [
         //example1.js
         {
-          name: 'myReverseFilterApp'
+          name: 'reverse',
+          returnStatement: {
+            argument: {
+              params: [{ name: 'input' }, { name: 'uppercase' }]
+            }
+          }
         },
         //example2.js
         {
-          name: 'myStatefulFilterApp'
+          name: 'decorate',
+          returnStatement: {
+            argument: {
+              params: [{ name: 'input' }]
+            }
+          }
         }
       ];
-      helperTest.testServiceFiles(servicesSemantics, servicesSemanticsTestData, done);
+      helperTest.testFilters(filtersSemantics, filtersSemanticsTestData, done);
     }, enableVerbose);
   });
 
