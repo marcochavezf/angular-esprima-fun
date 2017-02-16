@@ -16,47 +16,28 @@ describe.skip('Directives', function(){
 
     var dirTest = 'test/file.examples/testA';
     angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{
-      var servicesSemantics = projectSemantics.servicesSemantics;
-      var servicesSemanticsTestData = [
+      var directivesSemantics = projectSemantics.directivesSemantics;
+      var directivesSemanticsTestData = [
         //example1.js
         {
-          name: 'serviceA',
+          name: 'helloWorld',
           returnStatement: {
-            argument: {
-              id: { name: 'shinyNewServiceInstance' }
-            }
-          }
-        },
-        {
-          name: 'serviceB',
-          returnStatement: {
-            argument: {
-              properties: [
-                { key: { name: 'sdfg' } },
-                { key: { name: 'asdf' } },
-                { key: { name: 'abc' } },
-                { key: { name: 'bcd' } },
-                { key: { name: 'xyz' } },
-                { key: { name: 'chilli' } },
-                { key: { name: 'anotherChilli' } },
-                { key: { name: 'jalapeno' } }
-              ]
-            }
           }
         },
         //example2.js
         {
-          name: 'nameService',
+          name: 'helloWorld',
           returnStatement: {
-            argument: {
-              properties: [
-                { key: { name: 'getData' } }
-              ]
-            }
+          }
+        },
+        //example3.js
+        {
+          name: 'notepad',
+          returnStatement: {
           }
         }
       ];
-      helperTest.testServiceFiles(servicesSemantics, servicesSemanticsTestData, done);
+      helperTest.testServiceFiles(directivesSemantics, directivesSemanticsTestData, done);
     }, enableVerbose);
   });
 
@@ -68,22 +49,28 @@ describe.skip('Directives', function(){
 
     var dirTest = 'test/file.examples/testB';
     angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{
-      var servicesSemantics = projectSemantics.servicesSemantics;
-      var servicesSemanticsTestData = [
-        //example5.js
+      var directivesSemantics = projectSemantics.directivesSemantics;
+      var directivesSemanticsTestData = [
+        //example1.js
         {
-          name: 'MyService',
+          name: 'ionDatetimePicker',
           returnStatement: {
-            argument: {
-              properties: [
-                { key: { name: 'anotherFunction' } },
-                { key: { name: 'sayHello' } }
-              ]
-            }
+          }
+        },
+        //example2.js
+        {
+          name: 'searchBar',
+          returnStatement: {
+          }
+        },
+        //example3.js
+        {
+          name: 'arField',
+          returnStatement: {
           }
         }
       ];
-      helperTest.testServiceFiles(servicesSemantics, servicesSemanticsTestData, done);
+      helperTest.testServiceFiles(directivesSemantics, directivesSemanticsTestData, done);
     }, enableVerbose);
   });
 });
