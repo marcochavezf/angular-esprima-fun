@@ -4,6 +4,7 @@
 
 module.exports = {
   testControllerFiles: testControllerFiles,
+  testDirectiveFiles: testDirectiveFiles,
   testFilters: testFilters,
   testGlobalFunctions: testGlobalFunctions,
   testServiceFiles: testServiceFiles
@@ -96,6 +97,26 @@ function testFilters(filtersSemantics, filtersSemanticsTestData, done){
     params.forEach((param, index)=>{
       param.name.should.equal(paramsTestData[index].name);
     });
+  });
+  done();
+}
+
+function testDirectiveFiles(directivesSemantics, directivesSemanticsTestData, done){
+  directivesSemantics.should.have.length(directivesSemanticsTestData.length);
+  directivesSemantics.forEach((directive, index)=>{
+
+    var directiveTestData = directivesSemanticsTestData[index];
+    directive.name.should.equal(directiveTestData.name);
+    //TODO: check returnStatement
+    /*
+    //directive return function params
+    var params = directive.returnStatement.argument.params;
+    var paramsTestData = directiveTestData.returnStatement.argument.params;
+    params.should.have.length(paramsTestData.length);
+    params.forEach((param, index)=>{
+      param.name.should.equal(paramsTestData[index].name);
+    });
+    */
   });
   done();
 }

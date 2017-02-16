@@ -8,7 +8,7 @@ var angularEsprimaFun = require('../lib');
 var helperTest = require('./helpers');
 var enableVerbose = false;
 
-describe.skip('Directives', function(){
+describe('Directives', function(){
   it('should parse directives from file.examples/testA (local files)', function (done) {
     if (enableVerbose) {
       this.timeout(5000);
@@ -37,12 +37,12 @@ describe.skip('Directives', function(){
           }
         }
       ];
-      helperTest.testServiceFiles(directivesSemantics, directivesSemanticsTestData, done);
+      helperTest.testDirectiveFiles(directivesSemantics, directivesSemanticsTestData, done);
     }, enableVerbose);
   });
 
 
-  it.skip('should parse directives from file.examples/testB (local files)', function (done) {
+  it('should parse directives from file.examples/testB (local files)', function (done) {
     if (enableVerbose) {
       this.timeout(5000);
     }
@@ -70,7 +70,7 @@ describe.skip('Directives', function(){
           }
         }
       ];
-      helperTest.testServiceFiles(directivesSemantics, directivesSemanticsTestData, done);
+      helperTest.testDirectiveFiles(directivesSemantics, directivesSemanticsTestData, done);
     }, enableVerbose);
   });
 });
