@@ -1,6 +1,7 @@
 /**
  * Created by marcochavezf on 9/22/16.
  */
+var _ = require('lodash');
 
 module.exports = {
   testControllerFiles: testControllerFiles,
@@ -117,6 +118,42 @@ function testDirectiveFiles(directivesSemantics, directivesSemanticsTestData, do
       param.name.should.equal(paramsTestData[index].name);
     });
     */
+    checkScopePropsAndFns(directive, directiveTestData, 'controller');
+    checkScopePropsAndFns(directive, directiveTestData, 'link');
   });
   done();
+}
+
+function checkScopePropsAndFns(directiveData, directiveTestData, identifierObjScope){
+  var objWithScope = directiveData[identifierObjScope];
+  var objWithScopeTest = directiveTestData[identifierObjScope];
+  if (objWithScopeTest) {
+    objWithScope.should.exist;
+    //Check if all scope properties are unique
+    var uniqueScopePropertiesTest =_.uniqBy(objWithScopeTest.scopeProperties, 'name');
+    uniqueScopePropertiesTest.should.have.length(objWithScopeTest.scopeProperties.length);
+
+    var uniqueScopeProperties =_.uniqBy(objWithScope.scopeProperties, 'name');
+    uniqueScopeProperties.should.have.length(objWithScope.scopeProperties.length);
+
+    //console.log(JSON.stringify(objWithScope.scopeProperties));
+    objWithScope.scopeProperties.should.have.length(objWithScopeTest.scopeProperties.length);
+    objWithScope.scopeProperties.forEach((scopeProperty)=>{
+      var scopePropertyTest = _.find(objWithScopeTest.scopeProperties, { name: scopeProperty.name });
+      scopePropertyTest.should.exist;
+    });
+
+    //Check if all scope properties are unique
+    var uniqueScopeFunctionsTest =_.uniqBy(objWithScopeTest.scopeFunctions, 'name');
+    uniqueScopeFunctionsTest.should.have.length(objWithScopeTest.scopeFunctions.length);
+
+    var uniqueScopeFunctions =_.uniqBy(objWithScope.scopeFunctions, 'name');
+    uniqueScopeFunctions.should.have.length(objWithScope.scopeFunctions.length);
+
+    objWithScope.scopeFunctions.should.have.length(objWithScopeTest.scopeFunctions.length);
+    objWithScope.scopeFunctions.forEach((scopeFunction)=>{
+      var scopeFunctionTest = _.find(objWithScopeTest.scopeFunctions, { name: scopeFunction.name });
+      scopeFunctionTest.should.exist;
+    });
+  }
 }
