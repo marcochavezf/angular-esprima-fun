@@ -38,7 +38,8 @@
       '<button class="button button-icon ion-search" ng-if="!showBar || !showClearBtn" ng-click="toggleSearchBar()"></button>' +
       '<button class="button button-icon ion-ios-settings-strong" ng-if="showSettingsBtn" ng-click="openSettings()"></button>' +
       '<button class="button button-icon" ng-class="bulkSubmit.confirmationMode ? \'ion-checkmark\' : \'ion-arrow-right-c\'" ng-if="bulkSubmit.enabled" ng-disabled="!bulkSubmit.hasSelections" ng-click="bulkSubmit.submit()"></button>',
-      controller: SearchBarController
+      controller: SearchBarController,
+      compile: compile
     };
     return directive;
 
