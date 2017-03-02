@@ -144,6 +144,14 @@ describe('Directives', function(){
               { name: 'toggleSearchBar' },
               { name: 'changeSearchSelect' }
             ]
+          },
+          compile: {
+            link: {
+              scopeProperties: [
+                { name: 'navElement' }
+              ],
+              scopeFunctions: [ ]
+            }
           }
         },
         //example3.js

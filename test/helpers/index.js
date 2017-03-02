@@ -120,6 +120,9 @@ function testDirectiveFiles(directivesSemantics, directivesSemanticsTestData, do
     */
     checkScopePropsAndFns(directive, directiveTestData, 'controller');
     checkScopePropsAndFns(directive, directiveTestData, 'link');
+    if (directiveTestData.compile) {
+      checkScopePropsAndFns(directive.compile, directiveTestData.compile, 'link');
+    }
   });
   done();
 }
