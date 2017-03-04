@@ -32,10 +32,12 @@ describe('Directives', function(){
           returnStatement: {
           },
           link: {
-            scopeProperties: [
-              { name: 'color' }
-            ],
-            scopeFunctions: []
+            post: {
+              scopeProperties: [
+                {name: 'color'}
+              ],
+              scopeFunctions: []
+            }
           }
         },
         //example3.js
@@ -44,17 +46,25 @@ describe('Directives', function(){
           returnStatement: {
           },
           link: {
-            scopeProperties: [
-              { name: 'editMode' },
-              { name: 'noteText' },
-              { name: 'index' },
-              { name: 'notes' }
-            ],
-            scopeFunctions: [
-              { name: 'openEditor' },
-              { name: 'save' },
-              { name: 'restore' }
-            ]
+            pre: {
+              scopeProperties: [
+                {name: 'propertyA'}
+              ],
+              scopeFunctions: []
+            },
+            post: {
+              scopeProperties: [
+                {name: 'editMode'},
+                {name: 'noteText'},
+                {name: 'index'},
+                {name: 'notes'}
+              ],
+              scopeFunctions: [
+                {name: 'openEditor'},
+                {name: 'save'},
+                {name: 'restore'}
+              ]
+            }
           }
         }
       ];
@@ -107,21 +117,23 @@ describe('Directives', function(){
             ]
           },
           link: {
-            scopeProperties: [
-              { name: 'dateEnabled' },
-              { name: 'timeEnabled' },
-              { name: 'mondayFirst' },
-              { name: 'secondsEnabled' },
-              { name: 'meridiemEnabled' },
-              { name: 'monthStep' },
-              { name: 'hourStep' },
-              { name: 'minuteStep' },
-              { name: 'secondStep' },
-              { name: 'modelDate' }
-            ],
-            scopeFunctions: [
-              { name: 'commit' }
-            ]
+            post: {
+              scopeProperties: [
+                {name: 'dateEnabled'},
+                {name: 'timeEnabled'},
+                {name: 'mondayFirst'},
+                {name: 'secondsEnabled'},
+                {name: 'meridiemEnabled'},
+                {name: 'monthStep'},
+                {name: 'hourStep'},
+                {name: 'minuteStep'},
+                {name: 'secondStep'},
+                {name: 'modelDate'}
+              ],
+              scopeFunctions: [
+                {name: 'commit'}
+              ]
+            }
           }
         },
         //example2.js
@@ -147,10 +159,12 @@ describe('Directives', function(){
           },
           compile: {
             link: {
-              scopeProperties: [
-                { name: 'navElement' }
-              ],
-              scopeFunctions: [ ]
+              post: {
+                scopeProperties: [
+                  {name: 'navElement'}
+                ],
+                scopeFunctions: []
+              }
             }
           }
         },
@@ -182,16 +196,18 @@ describe('Directives', function(){
             ]
           },
           link: {
-            scopeProperties: [
-              { name: 'optionsListOrig' },
-              { name: 'helperModal' },
-              { name: 'modal' },
-              { name: 'mapUrl' }
-            ],
-            scopeFunctions: [
-              { name: 'openModalOrderItems' },
-              { name: 'moveItemInDialog' }
-            ]
+            post: {
+              scopeProperties: [
+                {name: 'optionsListOrig'},
+                {name: 'helperModal'},
+                {name: 'modal'},
+                {name: 'mapUrl'}
+              ],
+              scopeFunctions: [
+                {name: 'openModalOrderItems'},
+                {name: 'moveItemInDialog'}
+              ]
+            }
           }
         }
       ];

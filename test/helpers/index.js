@@ -119,17 +119,19 @@ function testDirectiveFiles(directivesSemantics, directivesSemanticsTestData, do
     });
     */
     checkScopePropsAndFns(directive, directiveTestData, 'controller');
-    checkScopePropsAndFns(directive, directiveTestData, 'link');
+    checkScopePropsAndFns(directive.link, directiveTestData.link, 'pre');
+    checkScopePropsAndFns(directive.link, directiveTestData.link, 'post');
     if (directiveTestData.compile) {
-      checkScopePropsAndFns(directive.compile, directiveTestData.compile, 'link');
+      checkScopePropsAndFns(directive.compile.link, directiveTestData.compile.link, 'pre');
+      checkScopePropsAndFns(directive.compile.link, directiveTestData.compile.link, 'post');
     }
   });
   done();
 }
 
 function checkScopePropsAndFns(directiveData, directiveTestData, identifierObjScope){
-  var objWithScope = directiveData[identifierObjScope];
-  var objWithScopeTest = directiveTestData[identifierObjScope];
+  var objWithScope = directiveData ? directiveData[identifierObjScope] : null;
+  var objWithScopeTest = directiveTestData ? directiveTestData[identifierObjScope] : null;
   if (objWithScopeTest) {
     objWithScope.should.exist;
     //Check if all scope properties are unique
