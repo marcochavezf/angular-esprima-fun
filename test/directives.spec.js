@@ -214,4 +214,19 @@ describe('Directives', function(){
       helperTest.testDirectiveFiles(directivesSemantics, directivesSemanticsTestData, done);
     }, enableVerbose);
   });
+
+  it('should parse directives from file.examples/testD/example1.js (local files)', function (done) {
+    if (enableVerbose) {
+      this.timeout(5000);
+    }
+
+    var dirTest = 'test/file.examples/testD/example1.js';
+    angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{
+      var directivesSemantics = projectSemantics.directivesSemantics;
+      var directive = directivesSemantics[0];
+      directive.name.should.equal('odForm');
+      directive.returnStatement.argument.properties.should.have.length(6);
+      done();
+    }, enableVerbose);
+  });
 });
