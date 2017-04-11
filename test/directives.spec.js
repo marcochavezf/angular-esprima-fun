@@ -244,4 +244,22 @@ describe('Directives', function(){
       done();
     }, enableVerbose);
   });
+
+  it('should parse directives from file.examples/testD/example3.js (local files)', function (done) {
+    if (enableVerbose) {
+      this.timeout(5000);
+    }
+
+    var dirTest = 'test/file.examples/testD/example3.js';
+    angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{
+      var directivesSemantics = projectSemantics.directivesSemantics;
+      var firstDirective = directivesSemantics[0];
+      var secondDirective = directivesSemantics[1];
+      firstDirective.name.should.equal('cardList');
+      secondDirective.name.should.equal('card');
+      firstDirective.returnStatement.argument.properties.should.have.length(5);
+      secondDirective.returnStatement.argument.properties.should.have.length(7);
+      done();
+    }, enableVerbose);
+  });
 });
