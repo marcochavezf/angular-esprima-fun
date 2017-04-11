@@ -8,7 +8,7 @@ var angularEsprimaFun = require('../lib');
 var helperTest = require('./helpers');
 var enableVerbose = false;
 
-describe.skip('Projects', function(){
+describe.only('Projects', function(){
   it('should parse a project containing all kind of angular components', function (done) {
     if (enableVerbose) {
       this.timeout(5000);

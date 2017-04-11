@@ -229,4 +229,19 @@ describe('Directives', function(){
       done();
     }, enableVerbose);
   });
+
+  it('should parse directives from file.examples/testD/example2.js (local files)', function (done) {
+    if (enableVerbose) {
+      this.timeout(5000);
+    }
+
+    var dirTest = 'test/file.examples/testD/example2.js';
+    angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{
+      var directivesSemantics = projectSemantics.directivesSemantics;
+      var directive = directivesSemantics[0];
+      directive.name.should.equal('reportView');
+      directive.returnStatement.argument.properties.should.have.length(5);
+      done();
+    }, enableVerbose);
+  });
 });
