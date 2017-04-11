@@ -8,15 +8,15 @@ var angularEsprimaFun = require('../lib');
 var helperTest = require('./helpers');
 var enableVerbose = false;
 
-describe.skip('Projects', function(){
+describe('Projects', function(){
   it('should parse a project containing all kind of angular components', function (done) {
-    if (enableVerbose) {
-      this.timeout(5000);
-    }
+    this.timeout(60000);
 
     var projectContentA = require('./file.examples/testC/project-a-example.json');
     angularEsprimaFun.createSemanticsFromSrc({ pathAndSrcFiles: projectContentA.srcContent }, (projectSemantics)=>{
-      debugger;
+      projectContentA.srcContent.length.should.equal(projectSemantics.filesParsed.length);
+      //TODO: add more cases to test
+      done();
     }, enableVerbose);
   });
 });

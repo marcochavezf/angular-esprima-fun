@@ -12,9 +12,8 @@ var enableVerbose = false;
 
 describe('Controllers', function () {
   it('should parse controllers from file.examples/testA (local files)', function (done) {
-    if (enableVerbose){
-      this.timeout(5000);
-    }
+    this.timeout(10000);
+
     var dirTest = 'test/file.examples/testA';
     angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{
       var controllersSemantics = projectSemantics.controllersSemantics;

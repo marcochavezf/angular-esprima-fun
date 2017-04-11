@@ -12,9 +12,7 @@ var enableVerbose = false;
 //TODO: add returnStatement properties to test
 describe('Directives', function(){
   it('should parse directives from file.examples/testA (local files)', function (done) {
-    if (enableVerbose) {
-      this.timeout(5000);
-    }
+    this.timeout(5000);
 
     var dirTest = 'test/file.examples/testA';
     angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{

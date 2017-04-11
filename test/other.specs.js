@@ -10,10 +10,8 @@ var enableVerbose = false;
 
 describe('Global Functions', function(){
   it('should parse controllers from file.examples/testA (local files)', function (done) {
-    if (enableVerbose) {
-      this.timeout(5000);
-    }
-
+    this.timeout(5000);
+  
     var dirTest = 'test/file.examples/testB';
     angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{
       var globalFunctionsSemantics = projectSemantics.globalFunctionsSemantics;
