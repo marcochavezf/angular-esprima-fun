@@ -32,9 +32,7 @@ describe('Projects', function(){
   });
 
   it('should parse directives from file.examples/testD/example5.js (local files)', function (done) {
-    if (enableVerbose) {
-      this.timeout(5000);
-    }
+    this.timeout(60000);
 
     var dirTest = 'test/file.examples/testD/example5.js';
     angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{
