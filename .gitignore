@@ -2,3 +2,7 @@ node_modules
 coverage
 dist
 .idea
+
+test/prototype/synthesized_a.json
+
+test/prototype/synthesized_b.json
