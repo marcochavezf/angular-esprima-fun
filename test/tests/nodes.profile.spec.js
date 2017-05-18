@@ -9,9 +9,9 @@ describe('Test JS Profile', function () {
   it('testing with profile file', function(done){
     this.timeout(100000);
     var cpuProfilePath = 'test/prototype/CPU-20161215T223525.cpuprofile';
-    var urlToFilter = 'http://dev.primotus.com:8080/app';
+    var pathToFilter = 'http://dev.primotus.com:8080/app';
     var pathOutput = 'test/prototype';
-    angularEsprimaFun.getProjectNodesFromProfile({ cpuProfilePath, urlToFilter, pathOutput }, function(projectNodes, error){
+    angularEsprimaFun.getProjectNodesFromProfile({ cpuProfilePath, pathToFilter, pathOutput }, function(projectNodes, error){
       done(error);
     })
   });
