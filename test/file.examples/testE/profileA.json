@@ -1,0 +1,214 @@
+{
+  "profile": {
+    "nodes": [
+      {
+        "id": 1,
+        "callFrame": {
+          "url": "wrong/A1"
+        },
+        "children": [
+          2,3,4,5
+        ]
+      },
+
+      {
+        "id": 2,
+        "callFrame": {
+          "url": "good/B1"
+        }
+      },
+      {
+        "id": 3,
+        "callFrame": {
+          "url": "wrong/B2"
+        }
+      },
+      {
+        "id": 4,
+        "callFrame": {
+          "url": "wrong/B3"
+        },
+        "children": [
+          6,7
+        ]
+      },
+      {
+        "id": 5,
+        "callFrame": {
+          "url": "good/B4"
+        },
+        "children": [
+          8,9
+        ]
+      },
+
+      {
+        "id": 6,
+        "callFrame": {
+          "url": "good/C1"
+        }
+      },
+      {
+        "id": 7,
+        "callFrame": {
+          "url": "wrong/C2"
+        },
+        "children": [
+          10,11
+        ]
+      },
+      {
+        "id": 8,
+        "callFrame": {
+          "url": "wrong/C3"
+        },
+        "children": [
+          12,14
+        ]
+      },
+      {
+        "id": 9,
+        "callFrame": {
+          "url": "wrong/C4"
+        },
+        "children": [
+          14
+        ]
+      },
+
+      {
+        "id": 10,
+        "callFrame": {
+          "url": "wrong/D1"
+        },
+        "children": [
+          15,16
+        ]
+      },
+      {
+        "id": 11,
+        "callFrame": {
+          "url": "good/D2"
+        }
+      },
+      {
+        "id": 12,
+        "callFrame": {
+          "url": "wrong/D3"
+        },
+        "children": [
+          17,18
+        ]
+      },
+      {
+        "id": 13,
+        "callFrame": {
+          "url": "wrong/D4"
+        },
+        "children": [
+          19,20
+        ]
+      },
+      {
+        "id": 14,
+        "callFrame": {
+          "url": "good/D5"
+        }
+      },
+
+      {
+        "id": 15,
+        "callFrame": {
+          "url": "good/E1"
+        }
+      },
+      {
+        "id": 16,
+        "callFrame": {
+          "url": "wrong/E2"
+        }
+      },
+      {
+        "id": 17,
+        "callFrame": {
+          "url": "good/E3"
+        }
+      },
+      {
+        "id": 18,
+        "callFrame": {
+          "url": "wrong/E4"
+        }
+      },
+      {
+        "id": 19,
+        "callFrame": {
+          "url": "good/E5"
+        }
+      },
+      {
+        "id": 20,
+        "callFrame": {
+          "url": "wrong/E6"
+        },
+        "children": [
+          22, 23
+        ]
+      },
+      {
+        "id": 21,
+        "callFrame": {
+          "url": "good/E7"
+        },
+        "children": [
+          24
+        ]
+      },
+
+      {
+        "id": 22,
+        "callFrame": {
+          "url": "wrong/F1"
+        }
+      },
+      {
+        "id": 23,
+        "callFrame": {
+          "url": "wrong/F2"
+        }
+      },
+      {
+        "id": 24,
+        "callFrame": {
+          "url": "good/F3"
+        },
+        "children": [
+          25
+        ]
+      },
+
+      {
+        "id": 25,
+        "callFrame": {
+          "url": "wrong/G1"
+        },
+        "children": [
+          26, 27
+        ]
+      },
+      {
+        "id": 26,
+        "callFrame": {
+          "url": "wrong/H1"
+        }
+      },
+      {
+        "id": 27,
+        "callFrame": {
+          "url": "good/H2"
+        }
+      }
+
+    ]
+  }
+}
