@@ -1,0 +1,2024 @@
+{
+  "profile": {
+    "endTime": 189602492085,
+    "nodes": [
+      {
+        "callFrame": {
+          "columnNumber": -1,
+          "functionName": "(root)",
+          "lineNumber": -1,
+          "scriptId": "0",
+          "url": ""
+        },
+        "children": [
+          2,
+          3,
+          4,
+          5,
+          7,
+          16,
+          19,
+          61,
+          62,
+          99
+        ],
+        "hitCount": 0,
+        "id": 1
+      },
+      {
+        "callFrame": {
+          "columnNumber": -1,
+          "functionName": "(program)",
+          "lineNumber": -1,
+          "scriptId": "0",
+          "url": ""
+        },
+        "hitCount": 45,
+        "id": 2
+      },
+      {
+        "callFrame": {
+          "columnNumber": -1,
+          "functionName": "(garbage collector)",
+          "lineNumber": -1,
+          "scriptId": "0",
+          "url": ""
+        },
+        "hitCount": 5,
+        "id": 3
+      },
+      {
+        "callFrame": {
+          "columnNumber": -1,
+          "functionName": "(idle)",
+          "lineNumber": -1,
+          "scriptId": "0",
+          "url": ""
+        },
+        "hitCount": 1904,
+        "id": 4
+      },
+      {
+        "callFrame": {
+          "columnNumber": 25,
+          "functionName": "",
+          "lineNumber": 3227,
+          "scriptId": "771",
+          "url": "http://localhost:8080/vendor/js/interact.js/interact.js"
+        },
+        "children": [
+          6,
+          13,
+          129,
+          134
+        ],
+        "hitCount": 0,
+        "id": 5
+      },
+      {
+        "callFrame": {
+          "columnNumber": 39,
+          "functionName": "getInteractionFromPointer",
+          "lineNumber": 3136,
+          "scriptId": "771",
+          "url": "http://localhost:8080/vendor/js/interact.js/interact.js"
+        },
+        "children": [
+          98
+        ],
+        "hitCount": 3,
+        "id": 6,
+        "positionTicks": [
+          {
+            "line": 3137,
+            "ticks": 2
+          },
+          {
+            "line": 3173,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 26,
+          "functionName": "getPointerId",
+          "lineNumber": 724,
+          "scriptId": "771",
+          "url": "http://localhost:8080/vendor/js/interact.js/interact.js"
+        },
+        "hitCount": 1,
+        "id": 98,
+        "positionTicks": [
+          {
+            "line": 725,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 31,
+          "functionName": "selectorDown",
+          "lineNumber": 1453,
+          "scriptId": "771",
+          "url": "http://localhost:8080/vendor/js/interact.js/interact.js"
+        },
+        "children": [
+          14
+        ],
+        "hitCount": 0,
+        "id": 13
+      },
+      {
+        "callFrame": {
+          "columnNumber": 30,
+          "functionName": "setEventXY",
+          "lineNumber": 1324,
+          "scriptId": "771",
+          "url": "http://localhost:8080/vendor/js/interact.js/interact.js"
+        },
+        "children": [
+          15
+        ],
+        "hitCount": 0,
+        "id": 14
+      },
+      {
+        "callFrame": {
+          "columnNumber": 24,
+          "functionName": "setEventXY",
+          "lineNumber": 612,
+          "scriptId": "771",
+          "url": "http://localhost:8080/vendor/js/interact.js/interact.js"
+        },
+        "hitCount": 1,
+        "id": 15,
+        "positionTicks": [
+          {
+            "line": 616,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 30,
+          "functionName": "pointerMove",
+          "lineNumber": 1757,
+          "scriptId": "771",
+          "url": "http://localhost:8080/vendor/js/interact.js/interact.js"
+        },
+        "children": [
+          130
+        ],
+        "hitCount": 0,
+        "id": 129
+      },
+      {
+        "callFrame": {
+          "columnNumber": 38,
+          "functionName": "collectEventTargets",
+          "lineNumber": 2730,
+          "scriptId": "771",
+          "url": "http://localhost:8080/vendor/js/interact.js/interact.js"
+        },
+        "children": [
+          131
+        ],
+        "hitCount": 0,
+        "id": 130
+      },
+      {
+        "callFrame": {
+          "columnNumber": 27,
+          "functionName": "parentElement",
+          "lineNumber": 940,
+          "scriptId": "771",
+          "url": "http://localhost:8080/vendor/js/interact.js/interact.js"
+        },
+        "children": [
+          132
+        ],
+        "hitCount": 0,
+        "id": 131
+      },
+      {
+        "callFrame": {
+          "columnNumber": 23,
+          "functionName": "isDocFrag",
+          "lineNumber": 573,
+          "scriptId": "771",
+          "url": "http://localhost:8080/vendor/js/interact.js/interact.js"
+        },
+        "children": [
+          133
+        ],
+        "hitCount": 0,
+        "id": 132
+      },
+      {
+        "callFrame": {
+          "columnNumber": -1,
+          "functionName": "[Symbol.hasInstance]",
+          "lineNumber": -1,
+          "scriptId": "0",
+          "url": ""
+        },
+        "hitCount": 1,
+        "id": 133
+      },
+      {
+        "callFrame": {
+          "columnNumber": 30,
+          "functionName": "getActualElement",
+          "lineNumber": 728,
+          "scriptId": "771",
+          "url": "http://localhost:8080/vendor/js/interact.js/interact.js"
+        },
+        "hitCount": 1,
+        "id": 134,
+        "positionTicks": [
+          {
+            "line": 729,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 25,
+          "functionName": "",
+          "lineNumber": 3227,
+          "scriptId": "1489",
+          "url": ""
+        },
+        "children": [
+          8
+        ],
+        "hitCount": 1,
+        "id": 7,
+        "positionTicks": [
+          {
+            "line": 3228,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 30,
+          "functionName": "pointerMove",
+          "lineNumber": 1757,
+          "scriptId": "1489",
+          "url": ""
+        },
+        "children": [
+          9
+        ],
+        "hitCount": 0,
+        "id": 8
+      },
+      {
+        "callFrame": {
+          "columnNumber": 30,
+          "functionName": "setEventXY",
+          "lineNumber": 1324,
+          "scriptId": "1489",
+          "url": ""
+        },
+        "children": [
+          10
+        ],
+        "hitCount": 0,
+        "id": 9
+      },
+      {
+        "callFrame": {
+          "columnNumber": 24,
+          "functionName": "setEventXY",
+          "lineNumber": 612,
+          "scriptId": "1489",
+          "url": ""
+        },
+        "children": [
+          11
+        ],
+        "hitCount": 0,
+        "id": 10
+      },
+      {
+        "callFrame": {
+          "columnNumber": 23,
+          "functionName": "getPageXY",
+          "lineNumber": 662,
+          "scriptId": "1489",
+          "url": ""
+        },
+        "children": [
+          12
+        ],
+        "hitCount": 0,
+        "id": 11
+      },
+      {
+        "callFrame": {
+          "columnNumber": 19,
+          "functionName": "getXY",
+          "lineNumber": 652,
+          "scriptId": "1489",
+          "url": ""
+        },
+        "hitCount": 1,
+        "id": 12,
+        "positionTicks": [
+          {
+            "line": 653,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 46,
+          "functionName": "elemData.handle",
+          "lineNumber": 4090,
+          "scriptId": "1473",
+          "url": ""
+        },
+        "children": [
+          17
+        ],
+        "hitCount": 0,
+        "id": 16
+      },
+      {
+        "callFrame": {
+          "columnNumber": 20,
+          "functionName": "dispatch",
+          "lineNumber": 4369,
+          "scriptId": "1473",
+          "url": ""
+        },
+        "children": [
+          18
+        ],
+        "hitCount": 0,
+        "id": 17
+      },
+      {
+        "callFrame": {
+          "columnNumber": 15,
+          "functionName": "fix",
+          "lineNumber": 4518,
+          "scriptId": "1473",
+          "url": ""
+        },
+        "hitCount": 1,
+        "id": 18,
+        "positionTicks": [
+          {
+            "line": 4538,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 46,
+          "functionName": "elemData.handle",
+          "lineNumber": 4090,
+          "scriptId": "709",
+          "url": "http://localhost:8080/vendor/js/jquery/jquery.js"
+        },
+        "children": [
+          20
+        ],
+        "hitCount": 0,
+        "id": 19
+      },
+      {
+        "callFrame": {
+          "columnNumber": 20,
+          "functionName": "dispatch",
+          "lineNumber": 4369,
+          "scriptId": "709",
+          "url": "http://localhost:8080/vendor/js/jquery/jquery.js"
+        },
+        "children": [
+          21,
+          53
+        ],
+        "hitCount": 0,
+        "id": 20
+      },
+      {
+        "callFrame": {
+          "columnNumber": 237,
+          "functionName": "b",
+          "lineNumber": 4,
+          "scriptId": "772",
+          "url": "http://localhost:8080/vendor/js/raygun/raygun.min.js"
+        },
+        "children": [
+          22
+        ],
+        "hitCount": 0,
+        "id": 21
+      },
+      {
+        "callFrame": {
+          "columnNumber": 237,
+          "functionName": "b",
+          "lineNumber": 4,
+          "scriptId": "1301",
+          "url": ""
+        },
+        "children": [
+          23
+        ],
+        "hitCount": 0,
+        "id": 22
+      },
+      {
+        "callFrame": {
+          "columnNumber": 42,
+          "functionName": "",
+          "lineNumber": 23931,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          24
+        ],
+        "hitCount": 0,
+        "id": 23
+      },
+      {
+        "callFrame": {
+          "columnNumber": 22,
+          "functionName": "$apply",
+          "lineNumber": 16346,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          25
+        ],
+        "hitCount": 0,
+        "id": 24
+      },
+      {
+        "callFrame": {
+          "columnNumber": 23,
+          "functionName": "$digest",
+          "lineNumber": 16039,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          26,
+          33,
+          40
+        ],
+        "hitCount": 0,
+        "id": 25
+      },
+      {
+        "callFrame": {
+          "columnNumber": 21,
+          "functionName": "$eval",
+          "lineNumber": 16249,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          27
+        ],
+        "hitCount": 0,
+        "id": 26
+      },
+      {
+        "callFrame": {
+          "columnNumber": 21,
+          "functionName": "",
+          "lineNumber": 15006,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          28
+        ],
+        "hitCount": 0,
+        "id": 27
+      },
+      {
+        "callFrame": {
+          "columnNumber": 23,
+          "functionName": "processQueue",
+          "lineNumber": 14979,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          29
+        ],
+        "hitCount": 0,
+        "id": 28
+      },
+      {
+        "callFrame": {
+          "columnNumber": 34,
+          "functionName": "serverRequest",
+          "lineNumber": 10451,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          30
+        ],
+        "hitCount": 0,
+        "id": 29
+      },
+      {
+        "callFrame": {
+          "columnNumber": 20,
+          "functionName": "sendReq",
+          "lineNumber": 10709,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          31
+        ],
+        "hitCount": 0,
+        "id": 30
+      },
+      {
+        "callFrame": {
+          "columnNumber": 17,
+          "functionName": "",
+          "lineNumber": 10885,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          32
+        ],
+        "hitCount": 0,
+        "id": 31
+      },
+      {
+        "callFrame": {
+          "columnNumber": -1,
+          "functionName": "send",
+          "lineNumber": -1,
+          "scriptId": "0",
+          "url": ""
+        },
+        "hitCount": 1,
+        "id": 32,
+        "positionTicks": [
+          {
+            "line": 10961,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 58,
+          "functionName": "ngShowWatchAction",
+          "lineNumber": 28107,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          34
+        ],
+        "hitCount": 0,
+        "id": 33
+      },
+      {
+        "callFrame": {
+          "columnNumber": 27,
+          "functionName": "removeClass",
+          "lineNumber": 5346,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          35
+        ],
+        "hitCount": 0,
+        "id": 34
+      },
+      {
+        "callFrame": {
+          "columnNumber": 20,
+          "functionName": "push",
+          "lineNumber": 2277,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          36
+        ],
+        "hitCount": 0,
+        "id": 35
+      },
+      {
+        "callFrame": {
+          "columnNumber": 27,
+          "functionName": "queueAnimation",
+          "lineNumber": 2318,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          37
+        ],
+        "hitCount": 0,
+        "id": 36
+      },
+      {
+        "callFrame": {
+          "columnNumber": 33,
+          "functionName": "areAnimationsAllowed",
+          "lineNumber": 2624,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          38
+        ],
+        "hitCount": 0,
+        "id": 37
+      },
+      {
+        "callFrame": {
+          "columnNumber": 30,
+          "functionName": "jQuery.fn.(anonymous function)",
+          "lineNumber": 2975,
+          "scriptId": "709",
+          "url": "http://localhost:8080/vendor/js/jquery/jquery.js"
+        },
+        "children": [
+          39
+        ],
+        "hitCount": 0,
+        "id": 38
+      },
+      {
+        "callFrame": {
+          "columnNumber": 21,
+          "functionName": "pushStack",
+          "lineNumber": 121,
+          "scriptId": "709",
+          "url": "http://localhost:8080/vendor/js/jquery/jquery.js"
+        },
+        "hitCount": 1,
+        "id": 39,
+        "positionTicks": [
+          {
+            "line": 122,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 38,
+          "functionName": "",
+          "lineNumber": 2878,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          41
+        ],
+        "hitCount": 0,
+        "id": 40
+      },
+      {
+        "callFrame": {
+          "columnNumber": 20,
+          "functionName": "scheduler",
+          "lineNumber": 380,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          42
+        ],
+        "hitCount": 0,
+        "id": 41
+      },
+      {
+        "callFrame": {
+          "columnNumber": 19,
+          "functionName": "nextTick",
+          "lineNumber": 410,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          43
+        ],
+        "hitCount": 0,
+        "id": 42
+      },
+      {
+        "callFrame": {
+          "columnNumber": 46,
+          "functionName": "triggerAnimationStart",
+          "lineNumber": 2900,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          44
+        ],
+        "hitCount": 0,
+        "id": 43
+      },
+      {
+        "callFrame": {
+          "columnNumber": 32,
+          "functionName": "invokeFirstDriver",
+          "lineNumber": 3061,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          45
+        ],
+        "hitCount": 0,
+        "id": 44
+      },
+      {
+        "callFrame": {
+          "columnNumber": 32,
+          "functionName": "initDriverFn",
+          "lineNumber": 1466,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          46
+        ],
+        "hitCount": 0,
+        "id": 45
+      },
+      {
+        "callFrame": {
+          "columnNumber": 36,
+          "functionName": "prepareRegularAnimation",
+          "lineNumber": 1668,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          47
+        ],
+        "hitCount": 0,
+        "id": 46
+      },
+      {
+        "callFrame": {
+          "columnNumber": 24,
+          "functionName": "init",
+          "lineNumber": 886,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          48
+        ],
+        "hitCount": 0,
+        "id": 47
+      },
+      {
+        "callFrame": {
+          "columnNumber": 27,
+          "functionName": "computeTimings",
+          "lineNumber": 872,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          49
+        ],
+        "hitCount": 0,
+        "id": 48
+      },
+      {
+        "callFrame": {
+          "columnNumber": 35,
+          "functionName": "computeCachedCssStyles",
+          "lineNumber": 806,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          50
+        ],
+        "hitCount": 0,
+        "id": 49
+      },
+      {
+        "callFrame": {
+          "columnNumber": 25,
+          "functionName": "computeCssStyles",
+          "lineNumber": 687,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          51
+        ],
+        "hitCount": 0,
+        "id": 50
+      },
+      {
+        "callFrame": {
+          "columnNumber": 16,
+          "functionName": "forEach",
+          "lineNumber": 325,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          52
+        ],
+        "hitCount": 0,
+        "id": 51
+      },
+      {
+        "callFrame": {
+          "columnNumber": 30,
+          "functionName": "",
+          "lineNumber": 690,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "hitCount": 1,
+        "id": 52,
+        "positionTicks": [
+          {
+            "line": 691,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 21,
+          "functionName": "clearMenus",
+          "lineNumber": 495,
+          "scriptId": "733",
+          "url": "http://localhost:8080/vendor/js/bootstrap/bootstrap.js"
+        },
+        "children": [
+          54
+        ],
+        "hitCount": 0,
+        "id": 53
+      },
+      {
+        "callFrame": {
+          "columnNumber": 19,
+          "functionName": "jQuery",
+          "lineNumber": 72,
+          "scriptId": "709",
+          "url": "http://localhost:8080/vendor/js/jquery/jquery.js"
+        },
+        "children": [
+          55
+        ],
+        "hitCount": 0,
+        "id": 54
+      },
+      {
+        "callFrame": {
+          "columnNumber": 34,
+          "functionName": "jQuery.fn.init",
+          "lineNumber": 2707,
+          "scriptId": "709",
+          "url": "http://localhost:8080/vendor/js/jquery/jquery.js"
+        },
+        "children": [
+          56
+        ],
+        "hitCount": 0,
+        "id": 55
+      },
+      {
+        "callFrame": {
+          "columnNumber": 16,
+          "functionName": "find",
+          "lineNumber": 2650,
+          "scriptId": "709",
+          "url": "http://localhost:8080/vendor/js/jquery/jquery.js"
+        },
+        "children": [
+          57
+        ],
+        "hitCount": 0,
+        "id": 56
+      },
+      {
+        "callFrame": {
+          "columnNumber": 15,
+          "functionName": "Sizzle",
+          "lineNumber": 736,
+          "scriptId": "709",
+          "url": "http://localhost:8080/vendor/js/jquery/jquery.js"
+        },
+        "children": [
+          58
+        ],
+        "hitCount": 0,
+        "id": 57
+      },
+      {
+        "callFrame": {
+          "columnNumber": 44,
+          "functionName": "document.getElementsByClassName",
+          "lineNumber": 1244,
+          "scriptId": "1509",
+          "url": ""
+        },
+        "children": [
+          59
+        ],
+        "hitCount": 0,
+        "id": 58
+      },
+      {
+        "callFrame": {
+          "columnNumber": 41,
+          "functionName": "document._getElementsByXPath",
+          "lineNumber": 1235,
+          "scriptId": "1509",
+          "url": ""
+        },
+        "children": [
+          60
+        ],
+        "hitCount": 0,
+        "id": 59
+      },
+      {
+        "callFrame": {
+          "columnNumber": -1,
+          "functionName": "evaluate",
+          "lineNumber": -1,
+          "scriptId": "0",
+          "url": ""
+        },
+        "hitCount": 1,
+        "id": 60,
+        "positionTicks": [
+          {
+            "line": 1236,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 22,
+          "functionName": "messager",
+          "lineNumber": 3,
+          "scriptId": "671",
+          "url": "chrome-extension://bdakmnplckeopfghnlpocafcepegjeap/detect_focus.js"
+        },
+        "children": [
+          79
+        ],
+        "hitCount": 1,
+        "id": 61,
+        "positionTicks": [
+          {
+            "line": 4,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 55,
+          "functionName": "",
+          "lineNumber": 405,
+          "scriptId": "674",
+          "url": "extensions::binding"
+        },
+        "children": [
+          80
+        ],
+        "hitCount": 0,
+        "id": 79
+      },
+      {
+        "callFrame": {
+          "columnNumber": 35,
+          "functionName": "target.(anonymous function)",
+          "lineNumber": 9,
+          "scriptId": "25",
+          "url": "extensions::SafeBuiltins"
+        },
+        "children": [
+          81
+        ],
+        "hitCount": 0,
+        "id": 80
+      },
+      {
+        "callFrame": {
+          "columnNumber": -1,
+          "functionName": "Apply",
+          "lineNumber": -1,
+          "scriptId": "0",
+          "url": ""
+        },
+        "children": [
+          82
+        ],
+        "hitCount": 0,
+        "id": 81
+      },
+      {
+        "callFrame": {
+          "columnNumber": 12,
+          "functionName": "",
+          "lineNumber": 61,
+          "scriptId": "674",
+          "url": "extensions::binding"
+        },
+        "children": [
+          83
+        ],
+        "hitCount": 0,
+        "id": 82
+      },
+      {
+        "callFrame": {
+          "columnNumber": 35,
+          "functionName": "target.(anonymous function)",
+          "lineNumber": 9,
+          "scriptId": "25",
+          "url": "extensions::SafeBuiltins"
+        },
+        "children": [
+          84
+        ],
+        "hitCount": 0,
+        "id": 83
+      },
+      {
+        "callFrame": {
+          "columnNumber": -1,
+          "functionName": "Apply",
+          "lineNumber": -1,
+          "scriptId": "0",
+          "url": ""
+        },
+        "children": [
+          85
+        ],
+        "hitCount": 0,
+        "id": 84
+      },
+      {
+        "callFrame": {
+          "columnNumber": 40,
+          "functionName": "",
+          "lineNumber": 95,
+          "scriptId": "684",
+          "url": "extensions::extension"
+        },
+        "children": [
+          86
+        ],
+        "hitCount": 0,
+        "id": 85
+      },
+      {
+        "callFrame": {
+          "columnNumber": 55,
+          "functionName": "",
+          "lineNumber": 405,
+          "scriptId": "674",
+          "url": "extensions::binding"
+        },
+        "children": [
+          87
+        ],
+        "hitCount": 0,
+        "id": 86
+      },
+      {
+        "callFrame": {
+          "columnNumber": 35,
+          "functionName": "target.(anonymous function)",
+          "lineNumber": 9,
+          "scriptId": "25",
+          "url": "extensions::SafeBuiltins"
+        },
+        "children": [
+          88
+        ],
+        "hitCount": 0,
+        "id": 87
+      },
+      {
+        "callFrame": {
+          "columnNumber": -1,
+          "functionName": "Apply",
+          "lineNumber": -1,
+          "scriptId": "0",
+          "url": ""
+        },
+        "children": [
+          89
+        ],
+        "hitCount": 0,
+        "id": 88
+      },
+      {
+        "callFrame": {
+          "columnNumber": 12,
+          "functionName": "",
+          "lineNumber": 61,
+          "scriptId": "674",
+          "url": "extensions::binding"
+        },
+        "children": [
+          90
+        ],
+        "hitCount": 0,
+        "id": 89
+      },
+      {
+        "callFrame": {
+          "columnNumber": 35,
+          "functionName": "target.(anonymous function)",
+          "lineNumber": 9,
+          "scriptId": "25",
+          "url": "extensions::SafeBuiltins"
+        },
+        "children": [
+          91
+        ],
+        "hitCount": 0,
+        "id": 90
+      },
+      {
+        "callFrame": {
+          "columnNumber": -1,
+          "functionName": "Apply",
+          "lineNumber": -1,
+          "scriptId": "0",
+          "url": ""
+        },
+        "children": [
+          92
+        ],
+        "hitCount": 0,
+        "id": 91
+      },
+      {
+        "callFrame": {
+          "columnNumber": 51,
+          "functionName": "",
+          "lineNumber": 138,
+          "scriptId": "673",
+          "url": "extensions::runtime"
+        },
+        "children": [
+          93
+        ],
+        "hitCount": 0,
+        "id": 92
+      },
+      {
+        "callFrame": {
+          "columnNumber": 21,
+          "functionName": "createPort",
+          "lineNumber": 123,
+          "scriptId": "682",
+          "url": "extensions::messaging"
+        },
+        "children": [
+          94
+        ],
+        "hitCount": 0,
+        "id": 93
+      },
+      {
+        "callFrame": {
+          "columnNumber": 15,
+          "functionName": "Port",
+          "lineNumber": 417,
+          "scriptId": "682",
+          "url": "extensions::messaging"
+        },
+        "children": [
+          95
+        ],
+        "hitCount": 0,
+        "id": 94
+      },
+      {
+        "callFrame": {
+          "columnNumber": 51,
+          "functionName": "privates.constructPrivate",
+          "lineNumber": 112,
+          "scriptId": "681",
+          "url": "extensions::utils"
+        },
+        "children": [
+          96
+        ],
+        "hitCount": 0,
+        "id": 95
+      },
+      {
+        "callFrame": {
+          "columnNumber": 35,
+          "functionName": "target.(anonymous function)",
+          "lineNumber": 9,
+          "scriptId": "25",
+          "url": "extensions::SafeBuiltins"
+        },
+        "children": [
+          97
+        ],
+        "hitCount": 0,
+        "id": 96
+      },
+      {
+        "callFrame": {
+          "columnNumber": -1,
+          "functionName": "Apply",
+          "lineNumber": -1,
+          "scriptId": "0",
+          "url": ""
+        },
+        "hitCount": 1,
+        "id": 97
+      },
+      {
+        "callFrame": {
+          "columnNumber": 29,
+          "functionName": "",
+          "lineNumber": 401,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          63
+        ],
+        "hitCount": 0,
+        "id": 62
+      },
+      {
+        "callFrame": {
+          "columnNumber": 44,
+          "functionName": "",
+          "lineNumber": 855,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          64,
+          65
+        ],
+        "hitCount": 0,
+        "id": 63
+      },
+      {
+        "callFrame": {
+          "columnNumber": 19,
+          "functionName": "",
+          "lineNumber": 9496,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "hitCount": 1,
+        "id": 64,
+        "positionTicks": [
+          {
+            "line": 9497,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 20,
+          "functionName": "start",
+          "lineNumber": 1258,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          66
+        ],
+        "hitCount": 0,
+        "id": 65
+      },
+      {
+        "callFrame": {
+          "columnNumber": 38,
+          "functionName": "triggerAnimationStart",
+          "lineNumber": 1308,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          67
+        ],
+        "hitCount": 0,
+        "id": 66
+      },
+      {
+        "callFrame": {
+          "columnNumber": 20,
+          "functionName": "close",
+          "lineNumber": 1150,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          68
+        ],
+        "hitCount": 0,
+        "id": 67
+      },
+      {
+        "callFrame": {
+          "columnNumber": 24,
+          "functionName": "complete",
+          "lineNumber": 5584,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          69
+        ],
+        "hitCount": 0,
+        "id": 68
+      },
+      {
+        "callFrame": {
+          "columnNumber": 27,
+          "functionName": "AnimateRunner._tick",
+          "lineNumber": 5505,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          70
+        ],
+        "hitCount": 0,
+        "id": 69
+      },
+      {
+        "callFrame": {
+          "columnNumber": 21,
+          "functionName": "",
+          "lineNumber": 5445,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          71
+        ],
+        "hitCount": 0,
+        "id": 70
+      },
+      {
+        "callFrame": {
+          "columnNumber": 29,
+          "functionName": "",
+          "lineNumber": 5588,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          72
+        ],
+        "hitCount": 0,
+        "id": 71
+      },
+      {
+        "callFrame": {
+          "columnNumber": 24,
+          "functionName": "_resolve",
+          "lineNumber": 5594,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          73
+        ],
+        "hitCount": 0,
+        "id": 72
+      },
+      {
+        "callFrame": {
+          "columnNumber": 16,
+          "functionName": "forEach",
+          "lineNumber": 325,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          74
+        ],
+        "hitCount": 0,
+        "id": 73
+      },
+      {
+        "callFrame": {
+          "columnNumber": 47,
+          "functionName": "",
+          "lineNumber": 5596,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          75
+        ],
+        "hitCount": 0,
+        "id": 74
+      },
+      {
+        "callFrame": {
+          "columnNumber": 45,
+          "functionName": "",
+          "lineNumber": 2925,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          76
+        ],
+        "hitCount": 0,
+        "id": 75
+      },
+      {
+        "callFrame": {
+          "columnNumber": 20,
+          "functionName": "close",
+          "lineNumber": 3103,
+          "scriptId": "713",
+          "url": "http://localhost:8080/vendor/js/angular/angular-animate.js"
+        },
+        "children": [
+          77
+        ],
+        "hitCount": 0,
+        "id": 76
+      },
+      {
+        "callFrame": {
+          "columnNumber": 19,
+          "functionName": "$.fn.extend.removeClass",
+          "lineNumber": 15010,
+          "scriptId": "710",
+          "url": "http://localhost:8080/vendor/js/jquery/jquery.ui.js"
+        },
+        "children": [
+          78
+        ],
+        "hitCount": 0,
+        "id": 77
+      },
+      {
+        "callFrame": {
+          "columnNumber": 23,
+          "functionName": "removeClass",
+          "lineNumber": 7184,
+          "scriptId": "709",
+          "url": "http://localhost:8080/vendor/js/jquery/jquery.js"
+        },
+        "hitCount": 1,
+        "id": 78,
+        "positionTicks": [
+          {
+            "line": 7217,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 41,
+          "functionName": "requestLoaded",
+          "lineNumber": 10912,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          100
+        ],
+        "hitCount": 0,
+        "id": 99
+      },
+      {
+        "callFrame": {
+          "columnNumber": 28,
+          "functionName": "completeRequest",
+          "lineNumber": 10981,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          101
+        ],
+        "hitCount": 0,
+        "id": 100
+      },
+      {
+        "callFrame": {
+          "columnNumber": 19,
+          "functionName": "done",
+          "lineNumber": 10772,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          102
+        ],
+        "hitCount": 0,
+        "id": 101
+      },
+      {
+        "callFrame": {
+          "columnNumber": 22,
+          "functionName": "$apply",
+          "lineNumber": 16346,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          103
+        ],
+        "hitCount": 0,
+        "id": 102
+      },
+      {
+        "callFrame": {
+          "columnNumber": 23,
+          "functionName": "$digest",
+          "lineNumber": 16039,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          104
+        ],
+        "hitCount": 0,
+        "id": 103
+      },
+      {
+        "callFrame": {
+          "columnNumber": 21,
+          "functionName": "$eval",
+          "lineNumber": 16249,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          105
+        ],
+        "hitCount": 0,
+        "id": 104
+      },
+      {
+        "callFrame": {
+          "columnNumber": 21,
+          "functionName": "",
+          "lineNumber": 15006,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          106
+        ],
+        "hitCount": 0,
+        "id": 105
+      },
+      {
+        "callFrame": {
+          "columnNumber": 23,
+          "functionName": "processQueue",
+          "lineNumber": 14979,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          107,
+          126,
+          135
+        ],
+        "hitCount": 0,
+        "id": 106
+      },
+      {
+        "callFrame": {
+          "columnNumber": 22,
+          "functionName": "",
+          "lineNumber": 26,
+          "scriptId": "797",
+          "url": "http://localhost:8080/app/auth/controllers/loginController.js"
+        },
+        "children": [
+          108,
+          120,
+          122
+        ],
+        "hitCount": 0,
+        "id": 107
+      },
+      {
+        "callFrame": {
+          "columnNumber": 32,
+          "functionName": "utils_hooks__hooks",
+          "lineNumber": 14,
+          "scriptId": "1292",
+          "url": ""
+        },
+        "children": [
+          109
+        ],
+        "hitCount": 0,
+        "id": 108
+      },
+      {
+        "callFrame": {
+          "columnNumber": 32,
+          "functionName": "local__createLocal",
+          "lineNumber": 1507,
+          "scriptId": "1292",
+          "url": ""
+        },
+        "children": [
+          110
+        ],
+        "hitCount": 0,
+        "id": 109
+      },
+      {
+        "callFrame": {
+          "columnNumber": 30,
+          "functionName": "createLocalOrUTC",
+          "lineNumber": 1488,
+          "scriptId": "1292",
+          "url": ""
+        },
+        "children": [
+          111
+        ],
+        "hitCount": 0,
+        "id": 110
+      },
+      {
+        "callFrame": {
+          "columnNumber": 30,
+          "functionName": "createFromConfig",
+          "lineNumber": 1421,
+          "scriptId": "1292",
+          "url": ""
+        },
+        "children": [
+          112,
+          118
+        ],
+        "hitCount": 0,
+        "id": 111
+      },
+      {
+        "callFrame": {
+          "columnNumber": 27,
+          "functionName": "prepareConfig",
+          "lineNumber": 1432,
+          "scriptId": "1292",
+          "url": ""
+        },
+        "children": [
+          113
+        ],
+        "hitCount": 0,
+        "id": 112
+      },
+      {
+        "callFrame": {
+          "columnNumber": 28,
+          "functionName": "configFromInput",
+          "lineNumber": 1465,
+          "scriptId": "1292",
+          "url": ""
+        },
+        "children": [
+          114
+        ],
+        "hitCount": 0,
+        "id": 113
+      },
+      {
+        "callFrame": {
+          "columnNumber": 29,
+          "functionName": "configFromString",
+          "lineNumber": 958,
+          "scriptId": "1292",
+          "url": ""
+        },
+        "children": [
+          115
+        ],
+        "hitCount": 1,
+        "id": 114,
+        "positionTicks": [
+          {
+            "line": 962,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 26,
+          "functionName": "configFromISO",
+          "lineNumber": 905,
+          "scriptId": "1292",
+          "url": ""
+        },
+        "children": [
+          116
+        ],
+        "hitCount": 0,
+        "id": 115
+      },
+      {
+        "callFrame": {
+          "columnNumber": 38,
+          "functionName": "configFromStringAndFormat",
+          "lineNumber": 1272,
+          "scriptId": "1292",
+          "url": ""
+        },
+        "children": [
+          117
+        ],
+        "hitCount": 0,
+        "id": 116
+      },
+      {
+        "callFrame": {
+          "columnNumber": 35,
+          "functionName": "getParseRegexForToken",
+          "lineNumber": 551,
+          "scriptId": "1292",
+          "url": ""
+        },
+        "hitCount": 1,
+        "id": 117,
+        "positionTicks": [
+          {
+            "line": 552,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 19,
+          "functionName": "Moment",
+          "lineNumber": 181,
+          "scriptId": "1292",
+          "url": ""
+        },
+        "children": [
+          119
+        ],
+        "hitCount": 0,
+        "id": 118
+      },
+      {
+        "callFrame": {
+          "columnNumber": 23,
+          "functionName": "copyConfig",
+          "lineNumber": 131,
+          "scriptId": "1292",
+          "url": ""
+        },
+        "hitCount": 1,
+        "id": 119,
+        "positionTicks": [
+          {
+            "line": 167,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 24,
+          "functionName": "",
+          "lineNumber": 1930,
+          "scriptId": "1292",
+          "url": ""
+        },
+        "children": [
+          121
+        ],
+        "hitCount": 0,
+        "id": 120
+      },
+      {
+        "callFrame": {
+          "columnNumber": 39,
+          "functionName": "add_subtract__addSubtract",
+          "lineNumber": 1945,
+          "scriptId": "1292",
+          "url": ""
+        },
+        "hitCount": 1,
+        "id": 121,
+        "positionTicks": [
+          {
+            "line": 1946,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 27,
+          "functionName": "go",
+          "lineNumber": 3106,
+          "scriptId": "748",
+          "url": "http://localhost:8080/vendor/js/angular-ui/angular-ui-router.js"
+        },
+        "children": [
+          123
+        ],
+        "hitCount": 0,
+        "id": 122
+      },
+      {
+        "callFrame": {
+          "columnNumber": 47,
+          "functionName": "transitionTo",
+          "lineNumber": 3150,
+          "scriptId": "748",
+          "url": "http://localhost:8080/vendor/js/angular-ui/angular-ui-router.js"
+        },
+        "children": [
+          124
+        ],
+        "hitCount": 0,
+        "id": 123
+      },
+      {
+        "callFrame": {
+          "columnNumber": 25,
+          "functionName": "resolveState",
+          "lineNumber": 3570,
+          "scriptId": "748",
+          "url": "http://localhost:8080/vendor/js/angular-ui/angular-ui-router.js"
+        },
+        "children": [
+          125
+        ],
+        "hitCount": 0,
+        "id": 124
+      },
+      {
+        "callFrame": {
+          "columnNumber": 14,
+          "functionName": "all",
+          "lineNumber": 15208,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "hitCount": 1,
+        "id": 125,
+        "positionTicks": [
+          {
+            "line": 15209,
+            "ticks": 1
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 34,
+          "functionName": "serverRequest",
+          "lineNumber": 10451,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          127
+        ],
+        "hitCount": 0,
+        "id": 126
+      },
+      {
+        "callFrame": {
+          "columnNumber": 20,
+          "functionName": "sendReq",
+          "lineNumber": 10709,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "children": [
+          128
+        ],
+        "hitCount": 0,
+        "id": 127
+      },
+      {
+        "callFrame": {
+          "columnNumber": 17,
+          "functionName": "",
+          "lineNumber": 18338,
+          "scriptId": "711",
+          "url": "http://localhost:8080/vendor/js/angular/angular.js"
+        },
+        "hitCount": 3,
+        "id": 128,
+        "positionTicks": [
+          {
+            "line": 18339,
+            "ticks": 3
+          }
+        ]
+      },
+      {
+        "callFrame": {
+          "columnNumber": 71,
+          "functionName": "",
+          "lineNumber": 2895,
+          "scriptId": "792",
+          "url": "http://localhost:8080/vendor/js/clientside-commons/clientside-commons.js"
+        },
+        "children": [
+          136
+        ],
+        "hitCount": 0,
+        "id": 135
+      },
+      {
+        "callFrame": {
+          "columnNumber": 21,
+          "functionName": "initUser",
+          "lineNumber": 2958,
+          "scriptId": "792",
+          "url": "http://localhost:8080/vendor/js/clientside-commons/clientside-commons.js"
+        },
+        "children": [
+          137
+        ],
+        "hitCount": 0,
+        "id": 136
+      },
+      {
+        "callFrame": {
+          "columnNumber": 26,
+          "functionName": "put",
+          "lineNumber": 495,
+          "scriptId": "740",
+          "url": "http://localhost:8080/vendor/js/angular-cache/angular-cache.js"
+        },
+        "children": [
+          138
+        ],
+        "hitCount": 0,
+        "id": 137
+      },
+      {
+        "callFrame": {
+          "columnNumber": 32,
+          "functionName": "remove",
+          "lineNumber": 599,
+          "scriptId": "740",
+          "url": "http://localhost:8080/vendor/js/angular-cache/angular-cache.js"
+        },
+        "hitCount": 1,
+        "id": 138,
+        "positionTicks": [
+          {
+            "line": 619,
+            "ticks": 1
+          }
+        ]
+      }
+    ]
+  }
+}
