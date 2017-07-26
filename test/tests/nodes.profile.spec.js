@@ -18,13 +18,13 @@ describe('Test JS Profile', function () {
     })
   });
 
-  it.skip('testing with a real profile file', function(done){
+  it('testing with a real profile file', function(done){
     this.timeout(100000);
     var cpuProfilePath = 'test/prototype/CPU-20161215T223525.cpuprofile';
     var pathToFilter = 'http://dev.primotus.com:8080/app';
     var pathOutput = 'test/prototype';
     angularEsprimaFun.getProjectNodesFromProfile({ cpuProfilePath, pathToFilter, pathOutput }, function(projectNodes, error){
       done(error);
-    })
+    });
   });
 });
