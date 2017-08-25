@@ -31,7 +31,7 @@ gulp.task('dist', function () {
 });
 
 gulp.task('static', function () {
-  return gulp.src(['**/*.js', '!test/file.examples/**/*.*'])
+  return gulp.src(['lib/**/*.js'])
     .pipe(excludeGitignore())
     .pipe(eslint())
     .pipe(eslint.format())
