@@ -234,4 +234,72 @@ describe('Services', function(){
       helperTest.testServiceFiles(servicesSemantics, servicesSemanticsTestData, done);
     }, enableVerbose);
   });
+
+  it('should parse authRequestInterceptor services from file.examples/testF/services/example1.js', function (done) {
+    this.timeout(5000);
+
+    var dirTest = 'test/file.examples/testF/example1.js';
+    angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{
+      var servicesSemantics = projectSemantics.servicesSemantics;
+      var servicesSemanticsTestData = [
+        //example1.js
+        {
+          name: 'authRequestInterceptor',
+          returnStatement: {
+            argument: {
+              properties: [
+                { key: { name: 'request' } },
+                { key: { name: 'responseError' } }
+              ]
+            }
+          }
+        },
+        {
+          name: 'TaskActions',
+          returnStatement: {
+            argument: {
+              properties: [
+                { key: { name: 'buildMenu' } },
+                { key: { name: 'buildNextView' } },
+                { key: { name: 'buildTableForDefaultTasks' } },
+                { key: { name: 'cancelAutoPolling' } },
+                { key: { name: 'createAddTaskAction' } },
+                { key: { name: 'dataLoading' } },
+                { key: { name: 'flushTasks' } },
+                { key: { name: 'loadStoredReduxState' } },
+                { key: { name: 'loadAndPrepareAllTasks' } },
+                { key: { name: 'getLatestAfterSubmit' } },
+                { key: { name: 'getCurrentState' } },
+                { key: { name: 'getFilteredTasks' } },
+                { key: { name: 'getUserTasks' } },
+                { key: { name: 'pauseAutoPolling' } },
+                { key: { name: 'populateMissingFieldValues' } },
+                { key: { name: 'processUnsentTasks' } },
+                { key: { name: 'removeTask' } },
+                { key: { name: 'removeViews' } },
+                { key: { name: 'setAutoPolling' } },
+                { key: { name: 'sortRawTasks' } },
+                { key: { name: 'subscribeUserTasks' } },
+                { key: { name: 'stop' } },
+                { key: { name: 'transformAllTasks' } },
+                { key: { name: 'unsubscribeUserTasks' } },
+                { key: { name: 'updateTasks' } }
+              ]
+            }
+          }
+        },
+        {
+          name: 'HttpInterceptor',
+          returnStatement: {
+            argument: {
+              properties: [
+                { key: { name: 'request' } }
+              ]
+            }
+          }
+        }
+      ];
+      helperTest.testServiceFiles(servicesSemantics, servicesSemanticsTestData, done);
+    }, enableVerbose);
+  });
 });
