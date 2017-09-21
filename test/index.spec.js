@@ -4,6 +4,7 @@
 
 //Angular Parser Tests
 require('./tests/controllers.spec');
+require('./tests/components.spec');
 require('./tests/directives.spec');
 require('./tests/services.spec');
 require('./tests/filters.spec');
