@@ -273,4 +273,24 @@ describe('Directives', function(){
       done();
     }, enableVerbose);
   });
+
+  it('should parse directives from file.examples/testD/example6.js (local files)', function (done) {
+    if (enableVerbose) {
+      this.timeout(5000);
+    }
+
+    var dirTest = 'test/file.examples/testD/example6.js';
+    angularEsprimaFun.createProjectSemantics(dirTest, (projectSemantics)=>{
+      var directivesSemantics = projectSemantics.directivesSemantics;
+      var directivesSemanticsTestData = [
+        //example6.js
+        { name: 'baUiSrefToggler' },
+        { name: 'baUiSrefTogglingSubmenu' },     
+        { name: 'baSidebarTogglingItem' },
+        { name: 'baSidebarCollapseMenu' },
+        { name: 'baSidebarToggleMenu' }        
+      ];
+      helperTest.testDirectiveFiles(directivesSemantics, directivesSemanticsTestData, done);      
+    }, enableVerbose);
+  });
 });
